@@ -1,0 +1,39 @@
+#CXX = /usr/local/arm-2010q1/bin/arm-none-linux-gnueabi-g++
+CXX = g++
+
+OBJECTS = CodeGen.o llvmOut.o Link.o llvmVar.o myfloat.o
+
+#AR=/usr/local/arm-2010q1/bin/arm-none-linux-gnueabi-ar
+AR= ar
+#RANLIB=/usr/local/arm-2010q1/bin/arm-none-linux-gnueabi-ranlib
+RANLIB= ranlib
+
+SRCS=CodeGen.cpp llvmOut.cpp Link.cpp myfloat.cpp
+
+default : all
+all : libCodeGen.a
+
+libCodeGen.a : $(OBJECTS)
+	$(AR) rvu $@ $(OBJECTS)
+	$(RANLIB) $@
+
+%.o : %.cpp
+	$(CXX) -Wall -fPIC -c $<
+
+#
+# Cleanup
+#
+.PHONY : clean
+clean :
+	$(RM) *.o *.a
+
+depend:
+	$(CXX) -M $(SRCS) > .depend
+
+CodeGen.o: ../Include/Common.h ../Include/ShHandle.h llvmOut.h llvmVar.h
+Link.o: ../Include/Common.h ../Include/ShHandle.h
+llvmOut.o: llvmOut.h llvmVar.h
+llvmVar.o: llvmVar.h myfloat.h
+
+-include .depend
+

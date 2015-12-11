@@ -1,0 +1,80 @@
+
+Checkout
+
+下載一個工作副本到目前目錄 目錄名稱為 llvm
+	svn checkout http://172.17.100.10/subversion/llvm
+
+可以指定目錄下載 ex: 要下載llvm 資料夾 下面的 llvm-2.8-all
+	svn checkout http://172.17.100.10/subversion/llvm/llvm-2.8-all
+
+Import
+
+新增檔案到 "資料庫" llvm 目錄下 -m "message you want" 為增加該次新增的工作的注解
+	svn import -m "message you want" -F filename http://172.17.100.10/subversion/llvm/
+
+新增目錄到 "資料庫" llvm 目錄下 注意!!如果要在llvm下開新資料夾要在加資料夾名稱
+	svn import -m "XXXXXXXXXXXXXXXX" directory_name http://172.100.10/subversion/llvm/directory_name
+
+
+
+
+=============================================" 在工作副本中 "=============================================
+                                 "工作副本" 也就是只能在工作副本裡面做操作
+Add
+
+新增檔案到 "工作副本" 也就是只能在工作副本裡面做操作
+
+	svn add " filename or directory_name "
+
+Update
+
+更新到最新板工作副本
+
+	svn update
+	svn update -r X ( X:numbers )更新到第幾板 也就是可以回覆之前板本
+
+Log
+
+印出訊息
+
+	svn log --limit "numbers" 印出最後幾個 log message
+	svn log 印出所有 log message
+
+Commit
+
+修改之後 必需使用此指令 才可以修改到 "資料庫" 裡面 因為之前修改都是在個人的工作副本裡面
+
+	svn commit -m "message you want"
+
+Delete 
+
+刪除檔案
+
+	svn delete -m "message you want" http://172.17.100.10/svn/3D/filename (直接刪除資料庫裡的資料)
+	svn delete -m "XXXXXXXXXXXXXXXX" filename (工作副本使用 之後使用commit 可以使得資料庫也刪除)
+
+Ls     查看目錄下檔案列表
+
+	svn ls http://172.17.100.10/svn/3D (查看llvm下的檔案列表)
+
+p.s. 在commit之前 先使用svn status -u 可以看到檔案是否修改(*) 如果有的話 先update工作副本 同一行如果都有修改的話 有檔案會產生!!(會有檔案給你對比)(無視空白)
+     C filename <~表示同一行有相衝
+     U filename <~表示合併成功
+
+
+
+SOP:
+	先使用checkout下載 然後會下載一個工作副本 此時檔案會從資料庫下載下來
+然後在如果有對檔案修改後 要使用commit指令 才可以update到資料庫裡頭 如果要新增
+檔案請使用add指令 刪除則使用delete指令 (add delete指令使用後 還是要使用commit指令)
+
+
+
+
+
+
+
+
+
+
+

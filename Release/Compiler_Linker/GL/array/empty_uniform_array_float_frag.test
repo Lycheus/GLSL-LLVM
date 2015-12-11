@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!-- This test tests basic functions with the following configuration:       -->
+<!-- return type = int                                                       -->
+<!-- const qualifier = empty                                                 -->
+<!-- parameter qualifier = empty                                             -->
+<!-- parameter type = int                                                    -->
+<!-- array specifier = array                                                 -->
+<test mode="gl" pattern="compare">
+	<shader>
+		<vertshader>../default/default.vert</vertshader>
+		<fragshader>empty_uniform_array_float_frag.frag</fragshader>
+		<uniform> 
+			<name>new_mad2</name>
+			<count>2</count>
+			<uniform1fv>45 14</uniform1fv>
+		</uniform> 
+	</shader>
+	<shader>
+		<vertshader>../default/default.vert</vertshader>
+		<fragshader>../default/expected.frag</fragshader>
+		<uniform>
+			<name>result</name>
+			<uniform4fv>1.0 1.0 1.0 1.0</uniform4fv>
+		</uniform>
+	</shader>
+</test>

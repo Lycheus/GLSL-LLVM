@@ -1,0 +1,6 @@
+getshadersource_programhandle.test
+getshadersource_noshadersource.test
+getshadersource_greater_maxlength.test
+getshadersource_small_maxlength.test
+getshadersource_equal_maxlength.test
+getshadersource_output.test

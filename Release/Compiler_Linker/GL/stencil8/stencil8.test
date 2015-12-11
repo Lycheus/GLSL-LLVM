@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<test mode="gl" pattern="extension">
+	<stencil8>
+		<shader>
+			<vertshader>../default/default_textured.vert</vertshader>
+			<fragshader>../default/default_textured.frag</fragshader>
+		</shader>
+	</stencil8>
+</test>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!-- The fragment shader should fail to compile.                             -->
+<test mode="gl" pattern="build">
+	<compstat>false</compstat>
+	<linkstat>false</linkstat>
+	<shader>
+		<vertshader>default.vert</vertshader>
+		<fragshader>Permissive_Constant_Conversions_frag.frag</fragshader>
+	</shader>
+</test>

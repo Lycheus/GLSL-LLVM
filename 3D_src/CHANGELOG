@@ -1,0 +1,2251 @@
+
+***********************2015/10/22***********************
+Update the ocean data in simulator.
+
+--------------------------------------------------------
+Now the version is 403.
+
+***********************2015/10/03***********************
+The lastest version of non-unified shader.
+Fix the array problems.
+And add two script to run conformance test benchmark.
+See my document for this compiler.
+
+--------------------------------------------------------
+Now the version is 402.
+
+***********************2015/08/11***********************
+Fix the FS to pass data to current unified shader register.
+
+--------------------------------------------------------
+Now the version is 401.
+
+***********************2015/08/11***********************
+Update the simulator to support transpose red cube.
+
+--------------------------------------------------------
+Now the version is 400.
+
+***********************2015/08/11***********************
+Upload the source code of systemc and add new makefile for simulator.
+Run this shell script which is 3D/3D_src/simulator/src_systemc/systemc_obj/buildsystemc.sh.
+It will help you to install the systemc.
+Makefile.old (if you installed the systemc, use this one.)
+Makefile.new (if you don't install the systemc, use this one.)
+--------------------------------------------------------
+Now the version is 399.
+
+***********************2015/08/02***********************
+Update the New Makefile which is for unified shader.
+@@@3D/Release/Compiler_Linker/Makefile 
+@@@3D/Release/Compiler_Linker/Makefile.x86 
+@@@3D/Release/Compiler_Linker/Makefile .arm
+--------------------------------------------------------
+Now the version is 398.
+
+***********************2015/08/02***********************
+Add the shell to fix the diffience among bison versions.
+It also update the frontend makefile to execute this
+shell.
+
+--------------------------------------------------------
+Now the version is 397.
+
+***********************2015/06/11***********************
+Make sure that simulator can run all testbench (without checking new lighting_cube).
+There is a defined flag called "ocean" in FS_ARGU.h.
+If you want to run ocean, please turn on it.Otherwise turn off it.
+
+--------------------------------------------------------
+Now the version is 396.
+
+***********************2015/06/05***********************
+Remove the F0~F3 registers form register pool.
+And fix the files below.
+ NewCallingConv_unified.td
+ NewFrameInfo_unified.h 
+ NewISelLowering_unified.cpp 
+ NewRegisterInfo_unified.td 
+ NewRegisterInfo_unified.cpp 
+
+--------------------------------------------------------
+Now the version is 395.
+
+***********************2015/05/26***********************
+1. Remove the executable mode of frontend codes.
+2. Remove the code:
+     int yyparse (void);
+   in glslang/MachineIndependent/preprocessor/scanner.h:96
+3. Add the code for w<0.01 in the front of viewport part.
+
+--------------------------------------------------------
+Now the version is 394.
+
+***********************2015/04/12***********************
+Update ~/3D/3D_src/Compiler_Linker/Compiler_and_Linker-patch/linker.c
+
+L112 : struct uniform_form temp_u_form;   // In order to modify uniform_for_unified_shader, hence variable change to global   
+L6124: if(type == 'v')                    // To judge fragment shader will after vertex shader continue execute not to initial value    
+--------------------------------------------------------
+Now the version is 393.
+
+***********************2015/04/08***********************
+Update ~/3D/3D_src/Compiler_Linker/Compiler_and_Linker-patch/linker.c
+
+add "#define VS_DMEM_SET" &"#ifdef VS_DMEM_SET" for unified shader 
+vertex count from 1024 just like fragment shader do.
+--------------------------------------------------------
+Now the version is 390.
+
+***********************2015/03/28***********************
+
+Fix BuildLinux.sh bug and Makefile.
+Please
+@@@@@@@@Update 3D/Release/Compiler_Linker/Makefile ,
+@@@@@@@@Update 3D/Release/Compiler_Linker/Makefile.arm ,
+@@@@@@@@Update 3D/Release/Compiler_Linker/Makefile.x86 ,
+and type "make clean;make [whatever benchmark you like]" 
+
+--------------------------------------------------------
+Now the version is 389.
+
+***********************2015/03/08***********************
+
+Fix CHANGELOG
+
+--------------------------------------------------------
+Now the version is 388.
+
+***********************2015/01/02***********************
+
+update systemc simulator and fix the compiler(structure and array for floating-point.
+
+--------------------------------------------------------
+Now the version is 386.
+
+***********************2014/12/23***********************
+
+update systemc simulator and fix the compiler(some function problem).
+
+--------------------------------------------------------
+Now the version is 385.
+
+***********************2014/12/12***********************
+
+update systemc simulator and fix the compiler(fract,mod,floor,ceil).
+
+--------------------------------------------------------
+Now the version is 384.
+
+***********************2014/12/06***********************
+
+update systemc simulator and fix the compiler.
+
+--------------------------------------------------------
+Now the version is 383.
+
+***********************2014/10/28***********************
+
+Update the compiler for unified shader(FS). reallocate the registers from 0~23.
+Attribute and Varying registers star from R24~31.
+@@@@@@Release update 3D/Release/Compiler_Linker/unified_shader
+
+--------------------------------------------------------
+Now the version is 383.
+
+***********************2014/07/23***********************
+
+@@@@@@@@Update the Makefile.
+Makefile is located in 3D/Release/Compiler_Linker/Compiler_and_Linker-patch.
+
+--------------------------------------------------------
+Now the version is 382.
+
+***********************2014/07/23***********************
+
+Update the compiler. Now the system testbench on System C and Attilla
+might be correct!!?
+
+--------------------------------------------------------
+Now the version is 381.
+
+***********************2014/07/23***********************
+
+Update the crate128.bmp in the systemc texture benchmark.
+
+--------------------------------------------------------
+Now the version is 380.
+
+***********************2014/05/14***********************
+
+Fix the adding arithmetic of vector array (redundant instruction. solved by fix alignment.)and LWZ instruction(add one more operand to save the data to indicate which component of vector).
+Fix the insertion of vector for mutiswizzle. e.g. temp.xyz = temp1.xyz.
+Fix the constructor of matrix in IR.(Using vector to solve it.)
+Fix the global variable problem. (Just IR part. Linker park should be fixed too.)
+Fix user define function in IR part. (Linker park should be fixed too.)
+ 
+
+--------------------------------------------------------
+Now the version is 378.
+
+***********************2014/04/7***********************
+
+Backup the compiler before I fix something.
+
+--------------------------------------------------------
+Now the version is 377.
+
+***********************2012/11/27***********************
+
+@@@@@@@@Update the new Makefile. 
+@@@@@@@@Update 3D/Release/Compiler_Linker/Makefile. 
+@@@@@@@@Update 3D/Release/Compiler_Linker/Makefile.arm. 
+@@@@@@@@Update 3D/Release/Compiler_Linker/Compiler_and_Linker-patch/Makefile.arm. 
+
+--------------------------------------------------------
+Now the version is 376.
+
+***********************2012/11/27***********************
+
+Update the unfinished compiler for array. The backend crash.
+
+--------------------------------------------------------
+Now the version is 375.
+
+***********************2012/10/11***********************
+
+Fix the LDI'sv bug. Temporarily change the second swizzle of RCP to 0x55.
+Fix the the R/L bit to judge the instruction to be SHR or SHL in disassemer.  
+
+--------------------------------------------------------
+Now the version is 374.
+
+***********************2012/10/11***********************
+
+Fix the FTOI's and ITOF's WM.
+
+--------------------------------------------------------
+Now the version is 373.
+
+***********************2012/10/11***********************
+
+Skip the RCP'SV bug with edward_work flag.
+
+--------------------------------------------------------
+Now the version is 372.
+
+***********************2012/10/11***********************
+
+Modify the assembler. Add new flag(#define edward_work) to fix some instrs.
+e.g ADD ,RCP and MVR. It doesn't matter(don't care bits,but FS care them).
+
+--------------------------------------------------------
+Now the version is 371.
+
+***********************2012/10/08***********************
+
+Modify the assembler. For the FTOI's and ITOF's swizzles.
+ In FS, they will care these bits, but VS not.
+
+
+--------------------------------------------------------
+Now the version is 370.
+
+***********************2012/10/07***********************
+
+Modify the assembler. It can accept the FIN's and MVR's commenting argument.
+e.g.
+	FIN Fragment Start!! 
+	MVR R0.1111, R18.xyzw, <4>  (Rd(R0): Fragment interface register)
+
+--------------------------------------------------------
+Now the version is 369.
+
+***********************2012/10/06***********************
+
+Modify the disasssembler and assembler.
+	
+--------------------------------------------------------
+Now the version is 368.
+
+***********************2012/08/08***********************
+
+@@@@@@@@@@@@@@@@@@@@Update Makefile
+	
+--------------------------------------------------------
+Now the version is 367.
+
+***********************2012/08/08***********************
+
+Update the compiler and data for ocean on simulator.
+Modify the float comparison of simulator. 
+	
+--------------------------------------------------------
+Now the version is 366.
+
+***********************2012/07/16***********************
+
+Add the one nop instuctions in ConVec4 function
+in FS assembly code.
+Update the compiler.
+simulator might be changed.
+	
+--------------------------------------------------------
+Now the version is 365.
+
+***********************2012/07/02***********************
+
+Update the new but broken simulator.
+
+--------------------------------------------------------
+Now the version is 364.
+
+***********************2012/05/31***********************
+
+Fix the bugs which is that storing value to variable.
+
+--------------------------------------------------------
+Now the version is 362.
+
+***********************2012/05/29***********************
+
+Update the newer simulator.
+
+--------------------------------------------------------
+Now the version is 361.
+
+***********************2012/05/29***********************
+
+Support to allocate the attribute location automaticly.
+
+--------------------------------------------------------
+Now the version is 360.
+
+***********************2012/05/24***********************
+
+Deal the problem of setting precision.(Now bypass it.)
+
+--------------------------------------------------------
+Now the version is 359.
+
+***********************2012/05/24***********************
+
+Fix the bug of getting the attribute information.
+
+--------------------------------------------------------
+Now the version is 357.
+
+***********************2012/04/12***********************
+
+Update the new simulator.
+
+--------------------------------------------------------
+Now the version is 356.
+
+***********************2012/04/11***********************
+
+Close the W_RECIPROCAL macro. Modify the attribute
+setting for each testbench.
+
+--------------------------------------------------------
+Now the version is 355.
+
+***********************2012/04/10***********************
+
+Update the new simulator.
+
+--------------------------------------------------------
+Now the version is 354.
+
+***********************2012/04/09***********************
+
+Fix the FS table. We have inserted some instructions in 
+FS, but we didn't update the table. Now the table 
+matches the code.
+
+--------------------------------------------------------
+Now the version is 352.
+
+***********************2012/04/08***********************
+
+Fix the fcmp and icmp instructions in IR.
+
+--------------------------------------------------------
+Now the version is 351
+
+***********************2012/04/06***********************
+
+Fix the inlinefunction: ChangeMatrix.
+
+--------------------------------------------------------
+Now the version is 350
+
+***********************2012/03/29***********************
+
+Load the attribute name from SCT. Arguments of viewport
+is also.
+
+--------------------------------------------------------
+Now the version is 349
+
+***********************2012/03/13***********************
+
+Fix the disassembler. There is a bug of LDI. We print
+one useless register.
+
+--------------------------------------------------------
+Now the version is 348
+
+***********************2012/03/13***********************
+
+Update the Makefile for convenience.
+
+@@Update 3D/Release/Compiler_Linker/Makefile
+@@Update 3D/Release/Compiler_Linker/Makefile.arm
+@@Update 3D/Release/Compiler_Linker/Makefile.x86
+
+--------------------------------------------------------
+Now the version is 347
+
+***********************2012/03/13***********************
+
+Fix the bug of "ChangeMatrix" function.
+
+--------------------------------------------------------
+Now the version is 345
+
+***********************2012/03/06***********************
+
+Add the removing link command at makefile's clean label.
+Because when we copy, the link will become the directory.
+
+@@Update 3D/Release/Compiler_Linker/Makefile
+@@Update 3D/Release/Compiler_Linker/Makefile.arm
+@@Update 3D/Release/Compiler_Linker/Makefile.x86
+
+--------------------------------------------------------
+Now the version is 344
+
+***********************2012/02/05***********************
+
+Fix the BuildLinux.sh.
+
+--------------------------------------------------------
+Now the version is 343
+
+***********************2012/02/04***********************
+
+Fix the Kaymon's HackedOrNot.h compiling bug.
+Modify the path for integrating. It adds COMPILER_DIR
+and API_DIR macros.
+
+@@Update 3D/Release/Compiler_Linker/Makefile.config
+
+--------------------------------------------------------
+Now the version is 342
+
+***********************2012/01/31***********************
+
+Fix the the type conversion.
+
+--------------------------------------------------------
+Now the version is 341
+
+***********************2012/01/24***********************
+
+Add the nop in front of the instruction that write 
+interface register (FS's special register).
+
+Fix the bug of missing instructions in ENDFrag_ass_file.
+
+--------------------------------------------------------
+Now the version is 340
+
+***********************2012/01/24***********************
+
+Fix the bugs in version 338.
+
+@@Update 3D/Release/Compiler_Linker/Makefile
+@@Update 3D/Release/Compiler_Linker/Makefile.arm
+@@Update 3D/Release/Compiler_Linker/Makefile.x86
+
+--------------------------------------------------------
+Now the version is 339
+
+***********************2012/01/24***********************
+
+Fix the directory to working directory.
+
+@@Update 3D/Release/Compiler_Linker/Makefile
+
+--------------------------------------------------------
+Now the version is 338
+
+***********************2012/01/24***********************
+
+Fix the directory to working directory.
+
+@@Update 3D/Release/Compiler_Linker/Makefile
+
+--------------------------------------------------------
+Now the version is 337
+
+***********************2012/01/24***********************
+
+Update the new inserting NOP way.
+
+@@Update 3D/Release/Compiler_Linker/Makefile
+
+--------------------------------------------------------
+Now the version is 336
+
+***********************2012/01/24***********************
+
+Fix the branch instruction(*2 ==> *2-1) when using 
+SET_NOP_NINE
+
+--------------------------------------------------------
+Now the version is 335
+
+***********************2012/01/24***********************
+
+@@Update 3D/Release/Makefile.
+
+--------------------------------------------------------
+Now the version is 333
+
+***********************2012/01/24***********************
+
+Add new file "HackedOrNot".
+move file "add_metadata" to 3dsrc.
+
+--------------------------------------------------------
+Now the version is 332
+
+***********************2012/01/23***********************
+
+Update new simulator.
+Fix the bug of inline function - Normalize when setting 
+SET_NOP_NINE.
+Modify all branch instructions to scalar version.
+
+--------------------------------------------------------
+Now the version is 331
+
+***********************2012/01/08***********************
+
+Update the beta version of frontend.
+Modify some parts of linker.
+
+--------------------------------------------------------
+Now the version is 330
+
+***********************2012/12/26***********************
+
+Update the new simulator from 3D team's svn.
+Version 303 is the previous simulator.	
+
+--------------------------------------------------------
+Now the version is 329
+
+***********************2012/12/26***********************
+
+Modify some parts of codes to integrate with API.
+
+--------------------------------------------------------
+Now the version is 326
+
+***********************2012/12/15***********************
+
+Add CompileStatus and LinkerStatus information for 
+opengles spec.
+
+--------------------------------------------------------
+Now the version is 325
+
+***********************2012/12/13***********************
+
+Fix the structure of compiler, because we use new
+APIContext.h and APIGl.h files.
+
+--------------------------------------------------------
+Now the version is 324
+
+***********************2012/12/13***********************
+
+Add APIGl.h.
+
+--------------------------------------------------------
+Now the version is 323
+
+***********************2012/09/12***********************
+
+Fix the assembly opcode name.
+opcode 28: MULL --> MULX
+
+--------------------------------------------------------
+Now the version is 322.
+
+***********************2012/08/23**********************
+
+c *= 1.0;
+c[0] *= 1.0;
+	
+vec4 y;
+vec2 x = y.xy;
+	
+Support the statement above.
+Update the inlinefunction i fixed.
+--------------------------------------------------------
+Now the version is 321.
+
+***********************2012/08/01***********************
+
+Fix the bug of allocate DMEM and CMEM address. The table
+records the address doesn't be changed.
+
+--------------------------------------------------------
+Now the version is 320.
+
+***********************2012/07/27***********************
+
+Fix the bug of identify the branch instructions(BGT BLT)
+
+--------------------------------------------------------
+Now the version is 319.
+
+***********************2012/07/18***********************
+
+Update the simulator of VS part.
+
+--------------------------------------------------------
+Now the version is 318.
+
+***********************2012/07/18***********************
+
+To install the clang and llvm on fedora 17. Include one more
+header file in Dianostic.h.
+
+--------------------------------------------------------
+Now the version is 314.
+
+***********************2012/07/10***********************
+
+Add data in simulator of lighting_cube.
+
+--------------------------------------------------------
+Now the version is 313.
+
+***********************2012/07/10***********************
+
+Fix the bug of GL_Normalize assembly.
+
+--------------------------------------------------------
+Now the version is 312.
+
+***********************2012/07/10***********************
+
+Fix the bug of ChangeMatrix.
+
+--------------------------------------------------------
+Now the version is 311.
+
+***********************2012/07/10***********************
+
+Fix some bug of assembler
+
+--------------------------------------------------------
+Now the version is 310.
+
+***********************2012/06/25***********************
+
+Add NOP before STV and modify LDIF for FS.
+
+--------------------------------------------------------
+Now the version is 309.
+
+***********************2012/06/25***********************
+
+Add FIN instruction in assembler.
+
+--------------------------------------------------------
+Now the version is 308.
+
+***********************2012/06/22***********************
+
+Add changing cross compiler command in Makefile.
+@@@Update
+Release/Compiler_Linker/Makefile
+Release/Compiler_Linker/Makefile.arm
+Release/Compiler_Linker/Makefile.x86
+Release/Compiler_Linker/change_x86.sh
+Release/Compiler_Linker/change_arm.sh
+Release/Compiler_Linker/change_version.sh
+
+--------------------------------------------------------
+Now the version is 307.
+
+***********************2012/06/22***********************
+
+Change the instructions for real FS hardware.
+These instructions are in the end of FS SL.
+
+--------------------------------------------------------
+Now the version is 305.
+
+***********************2012/05/11***********************
+
+Add the start address of DMEM (This is for FS).
+
+--------------------------------------------------------
+Now the version is 304.
+
+***********************2012/05/11***********************
+
+Add test_VS macro in simulator.
+
+--------------------------------------------------------
+Now the version is 303.
+
+***********************2012/05/11***********************
+
+Build the inline functions that we can do now.
+
+--------------------------------------------------------
+Now the version is 302.
+
+***********************2012/05/07***********************
+
+Update the glCompileShader and glLinkProgram to follow
+the spec.
+
+--------------------------------------------------------
+Now the version is 301.
+
+***********************2012/05/01***********************
+
+Fix the bug in Sub3y1_LLVM.c. It didn't change the path 
+of clang. 
+
+--------------------------------------------------------
+Now the version is 299.
+
+***********************2012/04/30***********************
+
+Fix the makefile. There is a bug about cleaning parse.
+
+@@@Update
+Release/Compiler_Linker/Compiler_and_Linker-patch/Makefile
+Release/Compiler_Linker/Compiler_and_Linker-patch/Makefile.arm
+Release/Compiler_Linker/Compiler_and_Linker-patch/Makefile.x86
+
+--------------------------------------------------------
+Now the version is 298.
+
+***********************2012/04/30***********************
+
+Change the llvm directory to /opt. We don't copy llvm 
+into every testbench, and just call llvm in the same
+directory. It just link llvm directory to /opt.
+Please use "make set_llvm_path" to link llvm directory.
+
+@@@Update
+Release/Compiler_Linker/Makefile
+Release/Compiler_Linker/set_llvm_path.sh
+
+--------------------------------------------------------
+Now the version is 296.
+
+***********************2012/04/26***********************
+
+Fix the bug of ENDFrag inline function.
+
+--------------------------------------------------------
+Now the version is 293.
+
+***********************2012/04/26***********************
+
+Fix the bug of duplicating the first instruction in FS.
+
+--------------------------------------------------------
+Now the version is 291.
+
+***********************2012/04/25***********************
+
+Fix the bug between int and long long in linker.c
+
+--------------------------------------------------------
+Now the version is 290.
+
+***********************2012/04/25***********************
+
+Update morphing ball testbench.
+@@@Update
+Release/Compiler_Linker/morphing_ball_VS_vertex
+Release/Compiler_Linker/morphing_ball_VS_fragment
+
+--------------------------------------------------------
+Now the version is 289.
+
+***********************2012/04/24***********************
+
+Add ocean directory and ball data.
+
+--------------------------------------------------------
+Now the version is 288.
+
+***********************2012/04/24***********************
+
+Fix the normalize inline function.
+
+--------------------------------------------------------
+Now the version is 284.
+
+***********************2012/04/23***********************
+
+Upload morphing_ball's wall picture.
+
+--------------------------------------------------------
+Now the version is 283.
+
+***********************2012/04/23***********************
+
+Fix the linker for inline functions.
+
+--------------------------------------------------------
+Now the version is 282.
+
+***********************2012/04/23***********************
+
+Upload morphing ball Vertexdata and Uniform.
+
+--------------------------------------------------------
+Now the version is 281.
+
+***********************2012/04/23***********************
+
+Upload morphing ball Vertexdata and Uniform.
+
+--------------------------------------------------------
+Now the version is 280.
+
+***********************2012/04/23***********************
+
+Fix the llvm about getElementPtr.
+Update the inline functions. It implements some new
+inline functions.
+
+--------------------------------------------------------
+Now the version is 279.
+
+***********************2012/04/22***********************
+
+Fix the built-in function name.
+
+--------------------------------------------------------
+Now the version is 278.
+
+***********************2012/04/21***********************
+
+Update simulator
+
+--------------------------------------------------------
+Now the version is 277.
+
+***********************2012/04/20***********************
+
+Add the uniform or attribute information and max numbers 
+to array name.
+e.g. 
+     uniform flaot hello[7];
+     => hello.u.a7
+--------------------------------------------------------
+Now the version is 275.
+
+***********************2012/04/20***********************
+
+Add the uniform or attribute information to array name.
+Append the argument's type to function name. 
+
+--------------------------------------------------------
+Now the version is 274.
+
+***********************2012/04/18***********************
+
+Update simulator
+
+--------------------------------------------------------
+Now the version is 273.
+
+***********************2012/04/17***********************
+
+Add GL testbench.
+We can overwrite default.vert and default.frag and "make
+default_testbench".
+@@@Update
+Release/Compiler_Linker/GL
+
+--------------------------------------------------------
+Now the version is 272.
+
+***********************2012/04/16***********************
+
+Fix the bug of disassembler.
+
+--------------------------------------------------------
+Now the version is 269.
+
+***********************2012/04/16***********************
+
+Update the linker about inline functions.
+Fix the bug of default_testbench. It is about the size
+of variable. I just expand the size, but it should be
+used by dynamic size.
+
+--------------------------------------------------------
+Now the version is 268.
+
+***********************2012/04/16***********************
+
+Add default_testbench.
+
+@@@Update
+Release/Compiler_Linker/Makefile
+Release/Compiler_Linker/default.vert
+Release/Compiler_Linker/default.frag
+--------------------------------------------------------
+Now the version is 267.
+
+***********************2012/04/15***********************
+
+Fix Makefile.
+
+@@@Update
+Release/Compiler_Linker/Compiler_and_Linker-patch/Makefile
+Release/Compiler_Linker/Compiler_and_Linker-patch/Makefile.arm
+Release/Compiler_Linker/Compiler_and_Linker-patch/Makefile.x86
+
+--------------------------------------------------------
+Now the version is 263.
+
+***********************2012/04/11***********************
+
+Fix FS simulator MVI bug.
+
+--------------------------------------------------------
+Now the version is 261.
+
+***********************2012/04/11***********************
+
+Fix FS simulator MVI bug.
+
+--------------------------------------------------------
+Now the version is 259.
+
+***********************2012/04/04***********************
+
+Fix the bug of opening file's bug in disassembler. Add 
+the error message.
+
+--------------------------------------------------------
+Now the version is 257.
+
+***********************2012/04/04***********************
+
+Add a macro to control creating the read FS instructions
+or not in inlineFunction.h
+
+--------------------------------------------------------
+Now the version is 256.
+
+***********************2012/03/27***********************
+
+Update the new simulator that is fix the behavior of 
+FS.
+
+--------------------------------------------------------
+Now the version is 255.
+
+***********************2012/03/27***********************
+
+Update the lighting_cube2 testbench
+
+@@@update 
+Release/Compiler_Linker/lighting_vertex2
+
+--------------------------------------------------------
+Now the version is 254.
+
+***********************2012/03/22***********************
+
+Fix the difference about the matrix unit uniform. It is
+difference between SET_UNIFORM_MATRIX_UNIT version and
+the version that combines with API. Now I fix this 
+difference.
+
+--------------------------------------------------------
+Now the version is 252.
+
+***********************2012/03/22***********************
+
+Add the lighting_cube2 testbench.
+
+@@@update
+Release/Compiler_Linker/Makefile
+
+--------------------------------------------------------
+Now the version is 251.
+
+***********************2012/03/22***********************
+
+Fix the bugs of linker about catching register and EOF
+in QEMU
+
+--------------------------------------------------------
+Now the version is 250.
+
+***********************2012/03/19***********************
+
+Add one macro "W_RECIPROCAL" to control w value being 
+reciprocal or not. This is in inlineFunction.h
+Add one macro "SET_UNIFORM_MATRIX_UNIT" to control 
+uniform is matrix unit or vector unit.
+
+--------------------------------------------------------
+Now the version is 249.
+
+***********************2012/03/19***********************
+
+Fix the linker about deciding the end of assembly code.
+
+--------------------------------------------------------
+Now the version is 248.
+
+***********************2012/03/14***********************
+
+Update new lighting cube's uniform.
+
+--------------------------------------------------------
+Now the version is 246.
+
+***********************2012/03/14***********************
+
+Fix the problem of new lighting cube.
+It's about declaring local variable and some matrix's 
+problem.
+
+--------------------------------------------------------
+Now the version is 245.
+
+***********************2012/03/14***********************
+
+Update lighting_vertex shading language.
+
+@@@update
+Release/Compiler_Linker/lighting_vertex
+
+--------------------------------------------------------
+Now the version is 244.
+
+***********************2012/03/14***********************
+
+Recover qt's Makefile.
+
+--------------------------------------------------------
+Now the version is 242.
+
+***********************2012/03/14***********************
+
+Fix the bug of linker, and add lighting_cube_new in 
+simulator.
+
+--------------------------------------------------------
+Now the version is 241.
+
+***********************2012/03/14***********************
+
+Update the lighting cube vertex shader code in simulator.
+
+--------------------------------------------------------
+Now the version is 239.
+
+***********************2012/03/13***********************
+
+Modify the lighting cube's uniform from matrix-unit to
+vector-unit.
+Fix the bug of setting NOP9, and fix the peep.c to match
+ our assembly code.
+
+--------------------------------------------------------
+Now the version is 237.
+
+***********************2012/03/08***********************
+
+Add the ocean's golden result.
+
+--------------------------------------------------------
+Now the version is 235.
+
+***********************2012/03/05***********************
+
+Fix the bug of new lighting cube. It's about the loading
+problem.
+
+--------------------------------------------------------
+Now the version is 234.
+
+***********************2012/03/05***********************
+
+Add 03_05_new_simulator
+
+--------------------------------------------------------
+Now the version is 233.
+
+***********************2012/02/29***********************
+
+Fix the simulator to load larger image.
+Change the image with high quality and flip vertically.
+Modify the disassembler, and fix the dumpForFSSim.sh.
+
+@@@update
+Release/Compiler_Linker/dumpForFSSim.sh
+
+--------------------------------------------------------
+Now the version is 232.
+
+***********************2012/02/23***********************
+
+Update for supporting new lighting cube testbench.
+
+--------------------------------------------------------
+Now the version is 226.
+
+***********************2012/02/23***********************
+
+Update linker to support cos and sin inline functions.
+
+--------------------------------------------------------
+Now the version is 225.
+
+***********************2012/02/23***********************
+
+Add the instructions.h file.
+
+--------------------------------------------------------
+Now the version is 224.
+
+***********************2012/02/23***********************
+
+Fix the OpenGLES.Cos and OpenGLES.Sin function name.
+For example: OpenGLES.Cos.1 => OpenGLES.Cos.f
+
+--------------------------------------------------------
+Now the version is 223.
+
+***********************2012/02/23***********************
+
+Update the linker to support the ocean's inline 
+functions.
+Update the makefile to support the label "lighting_cube_new".
+
+@@@update
+Release/Compiler_Linker/Makefile
+
+--------------------------------------------------------
+Now the version is 222.
+
+***********************2012/02/22***********************
+
+@@@update
+Release/Compiler_Linker/Compiler_and_Linker-patch/new_lighting_vertex
+
+--------------------------------------------------------
+Now the version is 220.
+
+***********************2012/02/22***********************
+
+Fix the OpenGLES.Cos and OpenGLES.Sin function name.
+For example: OpenGLES.Cos1 => OpenGLES.Cos.1
+
+@@@update
+Release/Compiler_Linker/Compiler_and_Linker-patch/lighting_vertex
+
+--------------------------------------------------------
+Now the version is 219.
+
+***********************2012/02/22***********************
+
+Fix the clamp,sin and cos function. Add the type infomation.
+
+--------------------------------------------------------
+Now the version is 218.
+
+***********************2012/02/17***********************
+
+Remove the redundant message.
+
+--------------------------------------------------------
+Now the version is 215.
+
+***********************2012/02/17***********************
+
+Fix LDV and STV bug.
+
+--------------------------------------------------------
+Now the version is 214.
+
+***********************2012/02/16***********************
+
+Update the new version of lighting cube.
+@@@update
+Release/Compiler_Linker/Compiler_and_Linker-patch/lighting_vertex
+
+--------------------------------------------------------
+Now the version is 213.
+
+***********************2012/02/16***********************
+
+Support the two dimensional array for new version of lighting cube. 
+
+--------------------------------------------------------
+Now the version is 212.
+
+***********************2012/02/16***********************
+
+Fix uniform address bug (from matrix to vector).
+
+--------------------------------------------------------
+Now the version is 211.
+
+***********************2012/02/16***********************
+
+Fix the instruction's bug. This instruction is generated
+from extractelement.
+
+--------------------------------------------------------
+Now the version is 210.
+
+***********************2012/02/13***********************
+
+Add some inline functions to support ocean.
+
+--------------------------------------------------------
+Now the version is 209.
+
+***********************2012/02/13***********************
+
+Fix the linker, and ocean's GLSL code.
+
+@@@update
+Release/Compiler_Linker/Compiler_and_Linker-patch/flatten.vert
+Release/Compiler_Linker/Compiler_and_Linker-patch/flatten.frag
+
+--------------------------------------------------------
+Now the version is 208.
+
+***********************2012/02/09***********************
+
+Change the uniform unit from Matrix4 to Vector.
+
+--------------------------------------------------------
+Now the version is 206.
+
+***********************2012/02/08***********************
+
+Fix the bug of clipping in simulator.
+
+--------------------------------------------------------
+Now the version is 202.
+
+***********************2012/02/07***********************
+
+Fix vertex shader simulator.
+
+--------------------------------------------------------
+Now the version is 202.
+
+***********************2012/02/07***********************
+
+Recover inlineFunction.cpp to version 197.
+
+--------------------------------------------------------
+Now the version is 201.
+
+***********************2012/02/07***********************
+
+Add the "write_mask" property into LLVM. In NewInstrInfo.td,
+if the variable is referenced to the function "printMemRegImm"
+, like variable "memri", it can use mask. I just use it in
+"LFS" instruction. If you want to use mask in other 
+instructions, it is an example for using mask. And the
+property "write_mask" is set in llvm/CodeGen/MachineOperand.h.
+
+--------------------------------------------------------
+Now the version is 200.
+
+***********************2012/02/06***********************
+
+Fix some lighting_cube problems.
+
+--------------------------------------------------------
+Now the version is 199.
+
+***********************2012/02/02***********************
+
+Change LDIF to LDI.
+
+--------------------------------------------------------
+Now the version is 198.
+
+***********************2012/02/02***********************
+
+Update stack address. It has some problems, but it can
+support red cube and texture cube.
+
+--------------------------------------------------------
+Now the version is 197.
+
+***********************2012/02/02***********************
+
+Fix some bug of ocean. It's about declaring problem.
+Now ocean has done.
+
+--------------------------------------------------------
+Now the version is 196.
+
+***********************2012/02/01***********************
+
+Add --use-gpu-stack-address into llc command.
+
+--------------------------------------------------------
+Now the version is 195.
+
+***********************2012/02/01***********************
+
+Fix branch instructions' bug.
+
+--------------------------------------------------------
+Now the version is 193.
+
+***********************2012/02/01***********************
+
+Fix CAL instruction in VS.
+
+--------------------------------------------------------
+Now the version is 192.
+
+***********************2012/02/01***********************
+
+Add two shells that help FS to read assembly code.
+
+@@@update
+Release/Compiler_Linker/Compiler_and_Linker-patch/FS_16txt_to_01txt.sh
+Release/Compiler_Linker/Compiler_and_Linker-patch/FS_16txt_to_assembly.sh
+
+--------------------------------------------------------
+Now the version is 190.
+
+***********************2012/02/01***********************
+
+Fix the simulator to fit our FIN instruction.
+
+--------------------------------------------------------
+Now the version is 188.
+
+***********************2012/01/31***********************
+
+Add instructions for moving the data to fragment 
+interface registers.
+
+--------------------------------------------------------
+Now the version is 187.
+
+***********************2012/01/31***********************
+
+Fix the FIN instruction. Now FIN's opcode is 14.
+
+--------------------------------------------------------
+Now the version is 186.
+
+***********************2012/01/31***********************
+
+Change llvm-obj from directory to link.
+
+@@@update
+Release/Compiler_Linker/Compiler_and_Linker-patch/change_x86.sh
+Release/Compiler_Linker/Compiler_and_Linker-patch/change_arm.sh
+Release/Compiler_Linker/Compiler_and_Linker-patch/llvm-obj
+
+--------------------------------------------------------
+Now the version is 185.
+
+***********************2012/01/19***********************
+
+Fix the FIN instruction, add fin_bit, and modify 
+simulator to fix our FIN instruction.
+
+--------------------------------------------------------
+Now the version is 182.
+
+***********************2012/01/17***********************
+
+Update the new ocean's code. So you should download it 
+again.
+
+--------------------------------------------------------
+Now the version is 181.
+
+***********************2012/01/17***********************
+
+Fix the fixer.cpp to support the Fin instruction.
+
+--------------------------------------------------------
+Now the version is 180.
+
+***********************2012/01/09***********************
+
+Update the simulator. This one has fix the clipping. And
+we fix the load float uniform value.
+
+--------------------------------------------------------
+Now the version is 179.
+
+***********************2012/01/05***********************
+
+Modify conditional branches in our target GPU.
+Ex:
+           gpu_beq  R4, R5, BB2
+      BB1:
+           ...
+      BB2:
+           ...
+  ==>
+           gpu_bne  R4, R5, 2  (If true, jump 2 instructions)
+           B BB2
+      BB1:
+           ...
+      BB2:
+           ...
+
+--------------------------------------------------------
+Now the version is 178.
+
+***********************2012/01/04***********************
+
+Add FIN instruction in the vertex shader assembly code.
+
+--------------------------------------------------------
+Now the version is 177.
+
+***********************2012/01/03***********************
+
+Upload the picture of floor.
+
+--------------------------------------------------------
+Now the version is 176.
+
+***********************2012/01/02***********************
+
+Upload the uniform for floor object and the uniform for 40% floor.
+
+--------------------------------------------------------
+Now the version is 174.
+***********************2012/01/02***********************
+
+Upload simulator.
+
+--------------------------------------------------------
+Now the version is 172.
+
+***********************2011/12/07***********************
+
+Fix the address of JUMP and B from align 4 to align 1
+
+--------------------------------------------------------
+Now the version is 170.
+
+***********************2011/12/07***********************
+
+Fix the addf instruction in normalize inline function.
+
+--------------------------------------------------------
+Now the version is 168.
+
+***********************2011/12/07***********************
+
+Fix the bug of vmrphw instruction. Using the temp
+register to avoid that Rd and Rs are the same register.
+
+--------------------------------------------------------
+Now the version is 167.
+
+***********************2011/12/07***********************
+
+Fix the bug of vsldoi instruction. Using the temp
+register to avoid that Rd and Rs are the same register.
+
+--------------------------------------------------------
+Now the version is 166.
+
+***********************2011/12/07***********************
+
+Remove useless files in simulator/shader-systemc_demo.
+
+--------------------------------------------------------
+Now the version is 165.
+
+***********************2011/12/07***********************
+
+Fix the linker to support that the immediate addresses of
+LDV and STV aren't divided with no remainder.
+
+--------------------------------------------------------
+Now the version is 157.
+
+***********************2011/11/17***********************
+
+Update QT to display RGB
+
+--------------------------------------------------------
+Now the version is 156.
+
+***********************2011/11/14***********************
+
+Fix the simulator about the swizzle.
+
+--------------------------------------------------------
+Now the version is 154.
+
+***********************2011/11/14***********************
+
+Fix the bug of inline function "Vectortimesscalar". This
+bug fills the wrong instruction.	
+
+--------------------------------------------------------
+Now the version is 153.
+
+***********************2011/11/14***********************
+
+Fix the bug of counting variable number. This bug makes
+we initial wrong number of variables.
+
+--------------------------------------------------------
+Now the version is 152.
+
+***********************2011/11/10***********************
+
+Update the modified Makefile.
+Add lighting_texture shader code and morphing ball
+shader code.  
+
+--------------------------------------------------------
+Now the version is 151.
+
+***********************2011/11/10***********************
+
+Ocean has been done in the IR part.
+
+--------------------------------------------------------
+Now the version is 150.
+
+***********************2011/11/01***********************
+
+Fix the linker trigger the end of fragment. Now 
+ENDFrag isn't the last instruction of the fragment
+shader.
+
+--------------------------------------------------------
+Now the version is 149.
+
+***********************2011/11/01***********************
+
+Update the QT. Change the y-axis increasing direction. 
+
+--------------------------------------------------------
+Now the version is 148.
+
+***********************2011/11/01***********************
+
+Add test_VS in simulator. This is for testing our
+instructions in VS simulator.
+
+--------------------------------------------------------
+Now the version is 147.
+
+***********************2011/11/01***********************
+
+Fix the normalize inline function again.
+
+--------------------------------------------------------
+Now the version is 146.
+
+***********************2011/10/31***********************
+
+Fix the normalize inline function.
+
+--------------------------------------------------------
+Now the version is 145.
+
+***********************2011/10/31***********************
+
+Add morphing ball lighting in VS directory in simulator.
+
+--------------------------------------------------------
+Now the version is 144.
+
+***********************2011/10/28***********************
+
+Add FS log into simulator. Its name is output/FS_log.txt
+
+--------------------------------------------------------
+Now the version is 141.
+
+***********************2011/10/24***********************
+
+For simulator, we set one fix varying variable:
+"texcoord0" in the linker's varying table.
+
+--------------------------------------------------------
+Now the version is 136.
+
+***********************2011/10/06***********************
+
+Fix the bug: missing to give the stack register value.
+
+--------------------------------------------------------
+Now the version is 135.
+
+***********************2011/10/04***********************
+
+@@@update
+Release/Compiler_Linker/Makefile
+
+Provide the standalone assembler. It can be compiled by
+using "make assembler".
+
+--------------------------------------------------------
+Now the version is 134.
+
+***********************2011/10/03***********************
+
+Add the golden_value that comes from API.
+
+--------------------------------------------------------
+Now the version is 130.
+
+***********************2011/09/28***********************
+
+Fix the bug of duplicating first instruction for FS
+simulator.
+
+--------------------------------------------------------
+Now the version is 129.
+
+***********************2011/09/28***********************
+
+Fix the makefile to version x86.
+
+--------------------------------------------------------
+Now the version is 128.
+
+***********************2011/09/27***********************
+
+Update the myfloat.cpp.
+Fix the string about float point representation.
+
+--------------------------------------------------------
+Now the version is 127.
+
+***********************2011/09/22***********************
+
+@@@update
+Release/Compiler_Linker/dumpForFSSim.sh
+
+Upload a tool to translate binary code to the FS format 
+that can be accepted by simulator. The tool calls 
+"dumpForFSSim.sh"
+
+--------------------------------------------------------
+Now the version is 126.
+
+***********************2011/09/22***********************
+
+Get the QEMU's cross-compiler.
+Please update your own cross-compiler.
+
+before:
+4.4.1
+now:
+4.3.2
+
+--------------------------------------------------------
+Now the version is 124.
+
+***********************2011/09/20***********************
+
+We upload the arm's makefiles to svn. We fix it, and 
+upload the x86's makefiles.
+
+--------------------------------------------------------
+Now the version is 123.
+
+***********************2011/09/20***********************
+
+Fix the bug of macro that is for integration with other
+group.
+
+--------------------------------------------------------
+Now the version is 122.
+
+***********************2011/09/19***********************
+
+Update QT.
+
+--------------------------------------------------------
+Now the version is 121.
+
+***********************2011/09/19***********************
+
+@@@update
+Release/Compiler_Linker/Makefile
+Release/Compiler_Linker/Compiler_and_Linker-patch/Makefile
+Release/Compiler_Linker/Compiler_and_Linker-patch/Makefile.arm
+Release/Compiler_Linker/Compiler_and_Linker-patch/Makefile.x86
+Release/Compiler_Linker/Makefile.config
+
+Fix the bugs of non-initialization and catching token.
+Add the GDB flag in the gcc command.
+
+--------------------------------------------------------
+Now the version is 118.
+
+***********************2011/09/16***********************
+
+Fix the bug of GLCompiler.cpp.
+
+--------------------------------------------------------
+Now the version is 116.
+
+***********************2011/09/16***********************
+
+@@@update Release/Makefile.config
+
+Update Makefile.config
+
+--------------------------------------------------------
+Now the version is 115.
+
+***********************2011/09/13***********************
+
+Fix the new_simulator. We fix the address that stores 
+uniform data, swizzle of the MVI, and the make RGB that
+texture instruction loads bound between 0 and 1.
+
+--------------------------------------------------------
+Now the version is 113.
+
+***********************2011/09/13***********************
+
+@@@update
+Release/Makefile
+Release/Compiler_and_Linker-patch/Makefile
+Release/Compiler_and_Linker-patch/Makefile.arm
+Release/Compiler_and_Linker-patch/Makefile.x86
+
+Fix the bug of the Makefile.
+
+--------------------------------------------------------
+Now the version is 111.
+
+***********************2011/09/10***********************
+
+Add new_simulator program.
+
+--------------------------------------------------------
+Now the version is 108.
+
+***********************2011/09/07***********************
+
+@@@update
+Release/Makefile
+Release/Compiler_and_Linker-patch/Makefile
+Release/Compiler_and_Linker-patch/Makefile.arm
+Release/Compiler_and_Linker-patch/Makefile.x86
+
+Update the Makefile and some file. It is given the 
+macro to select what we want to do by makefile argument.
+Now it can choose the testbench.
+
+--------------------------------------------------------
+Now the version is 107.
+
+***********************2011/08/30***********************
+
+Fix some bug of integration with other group.
+
+--------------------------------------------------------
+Now the version is 105.
+
+***********************2011/08/30***********************
+
+Fix some integrative bug of fixer and Sub3y1_LLVM.c
+
+--------------------------------------------------------
+Now the version is 103.
+
+***********************2011/08/16***********************
+
+Add a CallRegister function instruction before the 
+OpenGLES.End.
+
+--------------------------------------------------------
+Now the version is 101.
+
+***********************2011/08/16***********************
+
+Fix the XOR, and VMADD instructions.
+
+--------------------------------------------------------
+Now the version is 100.
+
+***********************2011/08/16***********************
+
+Delete the more action for condition about if ,else.
+For exaple:
+    br L1.T L1.F
+L1.T:
+	Do something.
+	br L1.E
+L1.F:
+	br L1.E
+L1.E:
+	Do something.
+Change to this.
+    br L1.T L1.E
+L1.T:
+	Do something.
+	br L1.E
+L1.E:
+	Do something.
+
+--------------------------------------------------------
+Now the version is 99.
+
+***********************2011/08/16***********************
+
+Debug for lighting IR.
+
+--------------------------------------------------------
+Now the version is 98.
+
+***********************2011/08/16***********************
+
+Change the Makefile.config.in of llvm_source.
+@@@update the Makefile
+
+--------------------------------------------------------
+Now the version is 97.
+
+***********************2011/08/16***********************
+
+Add new flag in Makefile.config.in of llvm_source.
+That is at the LDFLAGS variable.
+
+--------------------------------------------------------
+Now the version is 95.
+
+***********************2011/08/15***********************
+
+Add debug info in Sub3y1_llvm.c.
+
+!!Please update binutils to 2.20 or later.
+
+--------------------------------------------------------
+Now the version is 94.
+
+***********************2011/08/15***********************
+
+Fix the dominating problem for Morphing ball and fixer.
+
+--------------------------------------------------------
+Now the version is 93.
+
+***********************2011/08/11***********************
+
+@@@Update the Compiler_and_Linker-path/Makefile
+Update the Makefile.config.in in llvm_source. We add a 
+flag in "LDFLAGS" variable.
+Reinstall the llvm for arm.
+
+--------------------------------------------------------
+Now the version is 92.
+
+***********************2011/08/11***********************
+
+@@@Update the Compiler_and_Linker-path/Makefile
+Reinstall the llvm for arm.
+
+--------------------------------------------------------
+Now the version is 90.
+
+***********************2011/08/11***********************
+
+@@@Update the Makefile
+
+--------------------------------------------------------
+Now the version is 87.
+
+***********************2011/08/09***********************
+
+Add if expression in sub3y1.
+Add clang command in LLVM to support preprocess.
+
+--------------------------------------------------------
+Now the version is 82.
+
+***********************2011/08/05***********************
+
+Morphing ball has done for llvm IR.
+
+--------------------------------------------------------
+Now the version is 81.
+
+***********************2011/08/01***********************
+
+Update the linker that support the lighting part.
+(Morphing ball is verifying)
+
+And the systemC is modify to support texture and four
+varying variables except the texture coordinates. It 
+means texture coordinates varying variable must assign 
+to special VOB register.
+--------------------------------------------------------
+Now the version is 81.
+
+***********************2011/08/09***********************
+
+Add if expression in sub3y1.
+Add clang command in LLVM to preprocess.
+
+--------------------------------------------------------
+Now the version is 80.
+
+***********************2011/08/01***********************
+
+Fix the fixer shell.
+
+--------------------------------------------------------
+Now the version is 79.
+
+***********************2011/07/30***********************
+
+Change the function name from VectorTimesScalar to 
+ScalarTimesVector. 
+
+--------------------------------------------------------
+Now the version is 78.
+
+***********************2011/07/29***********************
+
+Modify the fixer.
+Solve the bug for VectorTimesScalar function.
+
+--------------------------------------------------------
+Now the version is 77.
+
+***********************2011/07/27***********************
+
+Fix the bug which can't compile the morphing_ball code.
+
+--------------------------------------------------------
+Now the version is 76.
+
+***********************2011/07/27***********************
+
+Remove X3
+
+--------------------------------------------------------
+Now the version is 75.
+
+***********************2011/07/26***********************
+
+Remove R3 and V3. 
+
+--------------------------------------------------------
+Now the version is 74.
+
+***********************2011/07/26***********************
+
+Change fcmp "sgt" to fcmp "ogt". 
+
+--------------------------------------------------------
+Now the version is 73.
+
+***********************2011/07/26***********************
+
+Fix the instruction STF to STV
+
+--------------------------------------------------------
+Now the version is 72.
+
+***********************2011/07/25***********************
+
+Update new llvm IR for lighting_cube.
+
+--------------------------------------------------------
+Now the version is 71.
+
+***********************2011/07/25***********************
+
+Update the Makefile under the Release directory.
+
+--------------------------------------------------------
+Now the version is 70.
+
+***********************2011/07/24***********************
+
+Update llvm IR for lighting_cube.
+
+--------------------------------------------------------
+Now the version is 69.
+
+***********************2011/07/20***********************
+
+Update llvm for fdiv.
+
+--------------------------------------------------------
+Now the version is 68.
+
+***********************2011/07/19***********************
+
+Testing update. Please don't update this version.
+
+--------------------------------------------------------
+Now the version is 67.
+
+***********************2011/07/12***********************
+
+Fix the bug of fixer.
+
+--------------------------------------------------------
+Now the version is 64.
+
+***********************2011/07/11***********************
+
+Update disassembler and fix some bug of linker and
+inlinefunction
+
+--------------------------------------------------------
+Now the version is 63.
+
+***********************2011/07/11***********************
+
+Fix the bug of version 61.
+
+--------------------------------------------------------
+Now the version is 62.
+
+***********************2011/07/08***********************
+
+Redirect the vec2 and vec3 to vec4.
+Modify the function named GenFunc in Sub3y1.
+
+--------------------------------------------------------
+Now the version is 61.
+
+***********************2011/06/27***********************
+
+Use the opcode of LDV and STV.
+Fix the NOP problem of view port.
+
+--------------------------------------------------------
+Now the version is 60.
+
+***********************2011/06/22***********************
+
+Fix the problem of version 46.
+Update Makefile: help
+
+@@@Please svn update Release/Compiler_Linker/Makefile and
+Release/Compiler_Linker/Compiler_and_Linker-patch/Makefile
+
+--------------------------------------------------------
+Now the version is 58.
+
+***********************2011/06/22***********************
+modify the sequence of number of "%". And reserve the old
+variable to reuse its vector.
+
+@@@Please svn update Release/Compiler_Linker/Makefile and
+Release/Compiler_Linker/Compiler_and_Linker-patch/Makefile
+
+--------------------------------------------------------
+Now the version is 46.
+
+***********************2011/06/17***********************
+
+Update the format of CHANGELOG.
+If there is "@@@" in front of the sentence of the change
+log, you must svn update those file in Release directory.
+In other word, @@@ means the small change of the Release
+at directory.
+
+--------------------------------------------------------
+Now the version is 43.
+
+***********************2011/06/17***********************
+
+Hide the debug information of llvm.
+
+--------------------------------------------------------
+Now the version is 42.
+
+***********************2011/06/17***********************
+
+Upload new BuildLinux.sh.
+
+--------------------------------------------------------
+Now the version is 41.
+
+***********************2011/06/17***********************
+
+Mark LVX instruction.
+
+--------------------------------------------------------
+Now the version is 40.
+
+***********************2011/06/15***********************
+
+Comment some main function code that is deviding vertex
+and fragment shader.
+Fix the problem that STV wasn't set opcode.
+
+--------------------------------------------------------
+Now the version is 39.
+
+***********************2011/06/14***********************
+
+Update release Makefile.
+
+@@@Please svn update Release/Compiler_Linker/Makefile and
+Release/Compiler_Linker/Compiler_and_Linker-patch/Makefile
+
+--------------------------------------------------------
+Now the version is 38.
+
+***********************2011/06/10***********************
+
+Mark ADDI instruction.
+Mark stvx instruction.
+And fix version 34 bug to 35
+--------------------------------------------------------
+Now the version is 35.
+
+***********************2011/06/10***********************
+
+Mark ADDI instruction.
+Mark stvx instruction.
+--------------------------------------------------------
+Now the version is 34.
+
+***********************2011/05/30***********************
+
+Fix bug in Sub3y1_LLVM.c of version 26.
+
+--------------------------------------------------------
+Now the version is 33.
+
+***********************2011/05/30***********************
+
+Add the macro "IMM_FOR_LD" in the linker.c.
+Hide all the debug output of the linker code.
+
+--------------------------------------------------------
+Now the version is 31.
+
+***********************2011/05/11***********************
+
+Add the "txt_to_bin.c" file.
+Add the mmap function to write binary into memory. If 
+you want to execute file, you will be the root or have
+the authority.
+
+--------------------------------------------------------
+Now the version is 29.
+
+***********************2011/05/09***********************
+
+Fix "Do not understand #define" problem by adding
+preprocessor(for c) for GLSL codes in Sub3y1_LLVM.c.
+
+--------------------------------------------------------
+Now the version is 26.
+
+***********************2011/04/11***********************
+
+Fix the "Register Conflict" problem by reserving register
+number R15-R24 for vectors.
+
+--------------------------------------------------------
+Now the version is 24.
+
+***********************2011/03/30***********************
+
+Fix the inlinefunction "VectorTimesScalar" problem.
+
+--------------------------------------------------------
+Now the version is 23.
+***********************2011/03/29***********************
+
+Fix the problem in translating LDV instruction at linker
+. And the linker create LDV instruction for matrix now.
+
+--------------------------------------------------------
+Now the version is 22.
+***********************2011/03/23***********************
+
+Fix the problem that is creating two NOP 9.
+
+--------------------------------------------------------
+Now the version is 18.
+***********************2011/03/23***********************
+
+Modify the function to identify to write the correct 
+instruction.(ex: add ,fadd. Write the correct one to the
+file)
+
+--------------------------------------------------------
+Now the version is 17.
+***********************2011/03/21***********************
+
+Add the memory allocation into linker. And the variable
+struct is added in linker.
+Add the inline function "VectorTimesScalar".
+The linker can identify the "LDV" instruction.
+The inline function "texture2D" need to be added.
+
+--------------------------------------------------------
+Now the version is 16.
+***********************2011/03/14***********************
+
+Fix the makefile of the Compiler_Linker
+
+--------------------------------------------------------
+
+Fix and add flag of the makefile. The flag, 
+change_version, has some problem in svn. We fix it. And
+we add the remake_llvm in the makefile.
+
+--------------------------------------------------------
+Now the version is 13.
+***********************2011/03/08***********************
+
+Update the Compiler_Linker
+Update the simulator
+Update the QT_showframe
+Update the BenchMarkFor3D_byhand
+
+--------------------------------------------------------
+All are the first version.
+--------------------------------------------------------
+The first version is 14.

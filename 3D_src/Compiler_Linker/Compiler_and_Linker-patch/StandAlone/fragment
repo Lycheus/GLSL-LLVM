@@ -1,0 +1,18 @@
+#### BEGIN COMPILER 0 INFO LOG ####
+@Color_RGB = highp uniform <4 x float>
+@tex0 = highp uniform sampler2D
+@texcoord0 = highp varying <2 x float>
+
+define highp void @main:void() {
+	%Color_Texture = call highp <4 x float> @texture2D:s21;vf2;(highp sampler2D @tex0, highp <2 x float> @texcoord0)
+	%0 = call highp <4 x float> @OpenGLES.VectorTimesScalar(highp float 0.200000, highp <4 x float> @Color_RGB)
+	%1 = call highp <4 x float> @OpenGLES.VectorTimesScalar(highp float 0.800000, highp <4 x float> %Color_Texture)
+	%2 = add highp <4 x float> %1, %0
+	@gl_FragColor = shufflevector highp <4 x float> %2, highp <4 x float> undef, <4 x i32> <i32 0, i32 1, i32 2, i32 3>
+}
+
+
+#### END COMPILER 0 INFO LOG ####
+#### BEGIN LINKER INFO LOG ####
+
+#### END LINKER INFO LOG ####

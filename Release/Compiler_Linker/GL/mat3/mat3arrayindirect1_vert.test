@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<test mode="gl" pattern="compare">
+	<shader>
+		<!-- Shader source files -->
+		<vertshader>mat3arrayindirect1_vert.vert</vertshader>
+		<fragshader>../default/default.frag</fragshader>
+
+		<!-- Uniforms for shaders -->
+		<!-- Expected results for color (red = 0.5, green = 0.25, blue = 0.125) -->
+		<uniform>
+			<name>testmat3</name>
+			<count>2</count>
+			<transpose>false</transpose>
+			<uniformmat3fv>
+				1.0 0.0 0.0
+				0.0 1.0 0.0
+				0.0 0.0 1.0
+				1.0 0.0 0.0
+				0.25 0.25 0.0
+				0.0 0.0 0.25
+			</uniformmat3fv>
+		</uniform>
+	</shader>
+	<shader>
+		<vertshader>../default/default.vert</vertshader>
+		<fragshader>../default/expected.frag</fragshader>
+		<uniform>
+			<name>result</name>
+			<uniform4fv>0.5 0.25 0.125 1.0</uniform4fv>
+		</uniform>
+	</shader>
+</test>

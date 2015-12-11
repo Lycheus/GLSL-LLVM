@@ -1,0 +1,6 @@
+radians_float_frag_xvary.test
+radians_vec2_frag_xvary.test
+radians_vec3_frag_xvary.test
+radians_float_vert_xvary.test
+radians_vec2_vert_xvary.test
+radians_vec3_vert_xvary.test

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<test mode="gl" pattern="shaderload">
+	<testnum>5</testnum>
+	<glerror>GL_NO_ERROR</glerror>
+	<shader>
+		<vertshader>../default/default.vert</vertshader>
+		<fragshader>../default/default.frag</fragshader>
+	</shader>	
+</test>

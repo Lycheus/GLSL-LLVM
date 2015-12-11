@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!-- The vertex shader should compile.                             -->
+<test mode="gl" pattern="build">
+	<compstat>true</compstat>
+	<linkstat>true</linkstat>
+	<shader>
+		<vertshader>CorrectFull_vert.vert</vertshader>
+		<fragshader>default.frag</fragshader>
+	</shader>
+</test>

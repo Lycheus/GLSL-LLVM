@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<test mode="gl" pattern="compare">
+	<shader>
+		<vertshader>../default/default.vert</vertshader>
+		<fragshader>mat4_16float_frag.frag</fragshader>
+	</shader>
+	<shader>
+		<vertshader>../default/default.vert</vertshader>
+		<fragshader>../default/expected.frag</fragshader>
+		<uniform>
+			<name>result</name>
+			<uniform4fv>1.0 1.0 1.0 1.0</uniform4fv>
+		</uniform>
+	</shader>
+</test>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!-- The fragment shader should compile.                                     -->
+<test mode="gl" pattern="build">
+	<compstat>true</compstat>
+	<linkstat>true</linkstat>
+	<shader>
+		<vertshader>default.vert</vertshader>
+		<fragshader>Low_Level_Assembly_Reserved_Words_frag.frag</fragshader>
+	</shader>
+</test>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<test mode="gl" pattern="compare">
+	<model>grid</model>
+	<shader>
+		<fragshader>../default/default.frag</fragshader>
+		<vertshader>clamp_vec2_vert_xvary_yconstquarter.vert</vertshader>
+	</shader>
+	<shader>
+		<fragshader>../default/default.frag</fragshader>
+		<vertshader>clamp_vec2_vert_xvary_yconstquarter_ref.vert</vertshader>
+	</shader>
+</test>

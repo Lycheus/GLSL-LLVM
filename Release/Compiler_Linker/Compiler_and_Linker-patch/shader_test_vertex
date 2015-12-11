@@ -1,0 +1,12 @@
+attribute vec4 rm_Vertex;                              
+attribute vec4 rm_color;                               
+uniform mat4 Mode1ViewMatrix1;                         
+uniform mat4 Mode1ViewMatrix;                          
+uniform mat4 ProjectionMatrix;                         
+varying vec4 v_color;                                  
+void main()                                            
+{                                                      
+ v_color = rm_color;                                   
+ gl_Position = ProjectionMatrix * Mode1ViewMatrix *    
+ Mode1ViewMatrix1 * rm_Vertex;                         
+}                                                      

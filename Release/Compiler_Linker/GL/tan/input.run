@@ -1,0 +1,6 @@
+tan_float_frag_xvary.test
+tan_vec2_frag_xvary.test
+tan_vec3_frag_xvary.test
+tan_float_vert_xvary.test
+tan_vec2_vert_xvary.test
+tan_vec3_vert_xvary.test

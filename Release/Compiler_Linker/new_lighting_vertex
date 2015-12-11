@@ -1,0 +1,81 @@
+
+attribute vec4 rm_Vertex;
+attribute vec3 rm_Normal;
+
+uniform mat4 gl_ProjectionMatrix;
+uniform mat4 gl_ModelViewMatrix;
+uniform mat4 ModelViewMatrix1;
+uniform vec4 ambient_light, ambient_material;
+uniform vec4 diffuse_light, diffuse_material;
+uniform vec4 specular_light, specular_material;
+uniform vec3 eye_Pos;
+uniform vec3 light_Pos;
+uniform float specularExp;
+//uniform mat3 NormalMatrix;
+varying vec4 Color_Light;
+
+void main()
+{	
+	vec4 ambient,diffuse;
+	vec3 lightDir,halfVector,normal;
+	mat3 NormalMatrix;
+	float detM, tmpM;
+	
+	//gl_NormalMatrix = Transpose of Inverse of the upper left 3กั3 submatrix of gl_ModelViewMatrix
+	//det(mat3(gl_ModelViewMatrix))
+	detM = ((gl_ModelViewMatrix[0][0] * gl_ModelViewMatrix[1][1] * gl_ModelViewMatrix[2][2])
+			+ (gl_ModelViewMatrix[0][1] * gl_ModelViewMatrix[1][2] * gl_ModelViewMatrix[2][0])
+			+ (gl_ModelViewMatrix[0][2] * gl_ModelViewMatrix[1][0] * gl_ModelViewMatrix[2][1]))
+			- ((gl_ModelViewMatrix[0][2] * gl_ModelViewMatrix[1][1] * gl_ModelViewMatrix[2][0])
+			+ (gl_ModelViewMatrix[0][1] * gl_ModelViewMatrix[1][0] * gl_ModelViewMatrix[2][2])
+			+ (gl_ModelViewMatrix[0][0] * gl_ModelViewMatrix[1][2] * gl_ModelViewMatrix[2][1]));
+
+	//Inverse
+	NormalMatrix[0][0] = (gl_ModelViewMatrix[1][1] * gl_ModelViewMatrix[2][2] - gl_ModelViewMatrix[1][2] * gl_ModelViewMatrix[2][1]);
+	NormalMatrix[0][1] = -(gl_ModelViewMatrix[0][1] * gl_ModelViewMatrix[2][2] - gl_ModelViewMatrix[0][2] * gl_ModelViewMatrix[2][1]);
+	NormalMatrix[0][2] = (gl_ModelViewMatrix[0][1] * gl_ModelViewMatrix[1][2] - gl_ModelViewMatrix[0][2] * gl_ModelViewMatrix[1][1]);
+	NormalMatrix[1][0] = -(gl_ModelViewMatrix[1][0] * gl_ModelViewMatrix[2][2] - gl_ModelViewMatrix[1][2] * gl_ModelViewMatrix[2][0]);
+	NormalMatrix[1][1] = (gl_ModelViewMatrix[0][0] * gl_ModelViewMatrix[2][2] - gl_ModelViewMatrix[0][2] * gl_ModelViewMatrix[2][0]);
+	NormalMatrix[1][2] = -(gl_ModelViewMatrix[0][0] * gl_ModelViewMatrix[1][2] - gl_ModelViewMatrix[0][2] * gl_ModelViewMatrix[1][0]);
+	NormalMatrix[2][0] = (gl_ModelViewMatrix[1][0] * gl_ModelViewMatrix[2][1] - gl_ModelViewMatrix[1][1] * gl_ModelViewMatrix[2][0]);
+	NormalMatrix[2][1] = -(gl_ModelViewMatrix[0][0] * gl_ModelViewMatrix[2][1] - gl_ModelViewMatrix[0][1] * gl_ModelViewMatrix[2][0]);
+	NormalMatrix[2][2] = (gl_ModelViewMatrix[0][0] * gl_ModelViewMatrix[1][1] - gl_ModelViewMatrix[0][1] * gl_ModelViewMatrix[1][0]);
+	NormalMatrix = NormalMatrix / detM;
+	
+	//Transpose
+	tmpM = NormalMatrix[0][1];
+	NormalMatrix[0][1] = NormalMatrix[1][0];
+	NormalMatrix[1][0] = tmpM;
+	tmpM = NormalMatrix[0][2];
+	NormalMatrix[0][2] = NormalMatrix[2][0];
+	NormalMatrix[2][0] = tmpM;
+	tmpM = NormalMatrix[1][2];
+	NormalMatrix[1][2] = NormalMatrix[2][1];
+	NormalMatrix[2][1] = tmpM;
+	
+	normal = normalize(NormalMatrix * rm_Normal);
+	lightDir = normalize(light_Pos);
+	halfVector = normalize(light_Pos+eye_Pos);
+	diffuse = diffuse_light * diffuse_material;
+	ambient = ambient_light * ambient_material;
+
+	vec3 n,halfV,viewV,ldir;
+	float NdotL,NdotHV;
+	vec4 color = ambient;
+
+	n = normalize(normal);
+
+	NdotL = max(dot(n,lightDir),0.0);
+
+	if (NdotL > 0.0) {
+		halfV = normalize(halfVector);
+		NdotHV = max(dot(n,halfV),0.0);
+		color += specular_light * specular_material * pow(NdotHV,specularExp);
+		color += diffuse * NdotL;
+	}
+
+	Color_Light=color/3.0;
+  
+ 	gl_Position =  gl_ProjectionMatrix * gl_ModelViewMatrix * ModelViewMatrix1 * rm_Vertex;
+
+}

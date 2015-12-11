@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<test mode="gl" pattern="compare">
+	<shader>
+		<!-- Shader source files -->
+		<vertshader>vec3single_vert.vert</vertshader>
+		<fragshader>../default/default.frag</fragshader>
+
+		<!-- Uniforms for shaders -->
+		<uniform>
+			<name>lightPosition</name>
+			<uniform3fv>0.25 0.75 0.50</uniform3fv>
+		</uniform>
+	</shader>
+	<shader>
+		<vertshader>../default/default.vert</vertshader>
+		<fragshader>../default/expected.frag</fragshader>
+		<uniform>
+			<name>result</name>
+			<uniform4fv>0.25 0.75 0.5 1.0</uniform4fv>
+		</uniform>
+	</shader>
+</test>

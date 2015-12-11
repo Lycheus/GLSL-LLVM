@@ -1,0 +1,6 @@
+acos_float_frag_xvary.test
+acos_vec2_frag_xvary.test
+acos_vec3_frag_xvary.test
+acos_float_vert_xvary.test
+acos_vec2_vert_xvary.test
+acos_vec3_vert_xvary.test

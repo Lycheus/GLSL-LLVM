@@ -1,0 +1,17 @@
+
+************************change_version.sh************************
+
+This shell can change the version of this program.
+We have two choice, x86 and arm. It will replace the Makefile and 
+the object code of the llvm to another, if you execute 
+"change_version.sh"
+
+**********************END change_version.sh**********************
+
+************************ check_version.sh************************
+
+This shell is a small program to check the version of this
+ program. It helps you to know the version that you use now.
+
+********************** END check_version.sh**********************
+

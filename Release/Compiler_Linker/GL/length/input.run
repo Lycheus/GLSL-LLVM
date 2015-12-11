@@ -1,0 +1,6 @@
+length_float_frag_xvary.test
+length_vec2_frag_xvary.test
+length_vec3_frag_xvary.test
+length_float_vert_xvary.test
+length_vec2_vert_xvary.test
+length_vec3_vert_xvary.test

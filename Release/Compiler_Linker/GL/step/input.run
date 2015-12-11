@@ -1,0 +1,6 @@
+step_float_frag_xvary_edgeconsthalf.test
+step_vec2_frag_xvary_edgeconsthalf.test
+step_vec3_frag_xvary_edgeconsthalf.test
+step_float_vert_xvary_edgeconsthalf.test
+step_vec2_vert_xvary_edgeconsthalf.test
+step_vec3_vert_xvary_edgeconsthalf.test

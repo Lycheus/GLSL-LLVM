@@ -1,0 +1,31 @@
+uniform sampler2D Tex;
+
+varying vec4 Color_Light;
+varying vec2 texcoord0;
+varying vec3 normal;
+
+uniform int shaderr;
+
+void main()
+{
+	if(shaderr==1)
+	{
+		gl_FragColor = texture2D(Tex,texcoord0);
+	}
+	else
+	{
+		vec3 temp_normal;
+		temp_normal=normal+1.0;
+
+		temp_normal=normalize(temp_normal);
+		
+		gl_FragColor.x=temp_normal.x;
+		gl_FragColor.y=temp_normal.y;
+		gl_FragColor.z=temp_normal.z;
+		gl_FragColor.w=1;
+	}
+
+	gl_FragColor=(gl_FragColor+Color_Light)/2.0;
+
+	return;
+}

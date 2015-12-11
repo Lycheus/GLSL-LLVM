@@ -1,0 +1,12 @@
+atan_float_frag_xvary.test
+atan_vec2_frag_xvary.test
+atan_vec3_frag_xvary.test
+atan_float_frag_xvaryyvary.test
+atan_vec2_frag_xvaryyvary.test
+atan_vec3_frag_xvaryyvary.test
+atan_float_vert_xvary.test
+atan_vec2_vert_xvary.test
+atan_vec3_vert_xvary.test
+atan_float_vert_xvaryyvary.test
+atan_vec2_vert_xvaryyvary.test
+atan_vec3_vert_xvaryyvary.test

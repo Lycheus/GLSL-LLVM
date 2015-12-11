@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!-- The fragment shader should succeed in compiling.                             -->
+<test mode="gl" pattern="build">
+	<compstat>true</compstat>
+	<linkstat>true</linkstat>
+	<shader>
+		<vertshader>CorrectParse2_vert.vert</vertshader>
+		<fragshader>default.frag</fragshader>
+	</shader>
+</test>

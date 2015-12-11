@@ -1,0 +1,74 @@
+SOURCE_DIR=../../../3D_src/Compiler_Linker/Compiler_and_Linker-patch
+GLSL_CODE_DIR=glslang
+MAKE_SO_GLSLANG=glslang/MachineIndependent
+MAKE_O_STANEALONE_INLINEFUNCTION_LOADIR=StandAlone
+MAKE_LLVM_X86=llvm-obj-x86
+MAKE_LLVM_ARM=llvm-obj-arm
+LLVM_SOURCE_FROM_LLVM_SOURCE_DIR=$(SOURCE_DIR)/llvm-source
+
+LEVEL=..
+
+CC=arm-none-linux-gnueabi-gcc -march=armv4t
+CCC=arm-none-linux-gnueabi-g++ -march=armv4t
+AR=arm-none-linux-gnueabi-ar
+
+include $(LEVEL)/Makefile.config
+
+default: all
+
+all: compiler.o linker.o inlineFunction.o StandAlone/StandAlone txt_to_bin peep disassembler output_txt
+#$(CC) Sub3y1_LLVM.c -o glCompileShader
+#$(CCC) compiler.o linker.o GLCompiler.o inlineFunction.o -o test_glCompiler
+	$(CCC) -c $(SOURCE_DIR)/GLCompiler.cpp -o GLCompiler.o $(DEFINE_FLAG)
+
+disassembler: $(SOURCE_DIR)/disassembler.c
+	$(CC) -g $(SOURCE_DIR)/disassembler.c $(DEFINE_FLAG) -o disassembler
+
+output_txt: $(SOURCE_DIR)/output_txt.c
+	$(CC) -g $(SOURCE_DIR)/output_txt.c $(DEFINE_FLAG) -o output_txt
+
+txt_to_bin: $(SOURCE_DIR)/txt_to_bin.c
+	$(CC) -g $(SOURCE_DIR)/txt_to_bin.c $(DEFINE_FLAG) -o txt_to_bin
+
+peep: $(SOURCE_DIR)/peep.c
+	$(CC) -g $(SOURCE_DIR)/peep.c $(DEFINE_FLAG) -o peep
+
+compiler.o: $(SOURCE_DIR)/Sub3y1_LLVM.c 
+	$(CCC) -c -g $(SOURCE_DIR)/Sub3y1_LLVM.c $(DEFINE_FLAG) -o compiler.o
+
+linker.o: $(SOURCE_DIR)/linker.c
+	$(CCC) -c -g $(SOURCE_DIR)/linker.c $(DEFINE_FLAG) -fno-stack-protector
+
+inlineFunction.o: $(SOURCE_DIR)/inlineFunction.cpp
+	$(CCC) -c -g $(SOURCE_DIR)/inlineFunction.cpp $(DEFINE_FLAG)
+
+ConvertSO.a: $(SOURCE_DIR)/$(MAKE_SO_GLSLANG)
+	cd $(SOURCE_DIR)/$(MAKE_SO_GLSLANG);make all
+	mv $(SOURCE_DIR)/$(MAKE_SO_GLSLANG)/ConvertSO.a .
+#cd $(SOURCE_DIR)/$(MAKE_SO_GLSLANG);make clean
+
+StandAlone/StandAlone: $(SOURCE_DIR)/StandAlone/StandAlone.cpp ConvertSO.a $(MAKE_O_STANEALONE_INLINEFUNCTION_LOADIR)
+	$(CCC) -g $(SOURCE_DIR)/StandAlone/StandAlone.cpp ConvertSO.a $(DEFINE_FLAG) -o StandAlone/StandAlone -lpthread
+
+compile_llvm_x86:
+	cd $(MAKE_LLVM_X86);../$(LLVM_SOURCE_FROM_LLVM_SOURCE_DIR)/configure CXXFLAGS=-g --enable-debug-runtime --enable-debug-symbols --enable-targers=all;make
+
+compile_llvm_arm:
+	cd $(MAKE_LLVM_ARM);../$(LLVM_SOURCE_FROM_LLVM_SOURCE_DIR)/configure CXXFLAGS=-g --enable-debug-runtime --enable-debug-symbols --enable-targers=all CXX=arm-none-linux-gnueabi-g++ CC=arm-none-linux-gnueabi-gcc --host=arm-none-linux-gnu --build=X86_64-unknown-linux-gnu;make
+
+compile_llvm: compile_llvm_x86 compile_llvm_arm
+
+clean_llvm_x86:
+	cd $(MAKE_LLVM_X86);make clean
+
+clean_llvm_arm:
+	cd $(MAKE_LLVM_ARM);make clean
+
+clean_llvm: clean_llvm_x86 clean_llvm_arm
+
+clean_glslang:
+	cd $(SOURCE_DIR)/$(MAKE_SO_GLSLANG);make clean
+
+clean: clean_glslang
+	rm -f *.o *.a *~ disassembler output_txt peep
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!-- This tests if the GLSL compiler implementation allows a const vec3 to   -->
+<!-- be initialized with a non-const vec2 returned from a function.          -->
+<!-- The fragment shader should fail to compile.                             -->
+<test mode="gl" pattern="build">
+	<compstat>false</compstat>
+	<linkstat>false</linkstat>
+	<shader>
+		<vertshader>../default/default.vert</vertshader>
+		<fragshader>constFunc_frag.frag</fragshader>
+	</shader>
+</test>

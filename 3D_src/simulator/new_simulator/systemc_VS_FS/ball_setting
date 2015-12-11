@@ -1,0 +1,23 @@
+cd /home/kaymon/Workingspace/3D/3D_src/simulator/new_simulator/systemc_VS_FS/VS_input/morphing_ball
+if [ "$1" == "wall" ]
+then
+	cp Uniform1_Wall Uniform2.txt
+	cp "Wall"$2"_Vertex_Data.txt" Vertex_Data2.txt
+	cd ../../FS_input/morphing_ball
+	cp wall_floor_Uniform1.txt Uniform2.txt
+elif [ "$1" == "floor" ]
+then
+	cp Uniform1_floor Uniform2.txt
+	cp Vertex_Data_floor.txt Vertex_Data2.txt
+	cd ../../FS_input/morphing_ball
+	cp wall_floor_Uniform1.txt Uniform2.txt
+elif [[ $1 == "ball" ]]
+then
+	cp ball_Uniform Uniform2.txt
+	cp ball_Vertex_Data Vertex_Data2.txt
+	cd ../../FS_input/morphing_ball
+	cp ball_Uniform Uniform2.txt
+else
+	echo "arg is wrong."
+fi
+

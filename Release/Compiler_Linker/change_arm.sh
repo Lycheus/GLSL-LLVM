@@ -1,0 +1,1 @@
+cp Makefile.arm Makefile

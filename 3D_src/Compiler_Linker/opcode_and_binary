@@ -1,0 +1,55 @@
+PC:   344	00		Color_RGB:
+PC:   345	00		Color_RGB:
+PC:   346	00		Color_RGB:
+PC:   347	00		Color_RGB:
+PC:   348	00		Color_RGB:
+PC:   349	00		Color_RGB:
+PC:   350	00		Color_RGB:
+PC:   351	00		Color_RGB:
+PC:   352	00			.space	16
+PC:   353	00			.space	16
+PC:   354	00			.space	16
+PC:   355	00			.space	16
+PC:   356	00			.space	16
+PC:   357	00			.space	16
+PC:   358	00			.space	16
+PC:   359	00			.space	16
+PC:   360	00			.space	16
+PC:   361	00			.space	16
+PC:   362	00			.space	16
+PC:   363	00			.space	16
+PC:   364	00			.space	16
+PC:   365	00			.space	16
+PC:   366	00			.space	16
+PC:   367	00			.space	16
+PC:   368	00000000	.long	.Lset0
+PC:   372	00		.Leh_frame_common_begin0:
+PC:   373	00		.Leh_frame_common_begin0:
+PC:   374	00		.Leh_frame_common_begin0:
+PC:   375	00		.Leh_frame_common_begin0:
+PC:   376	00		.Leh_frame_common_begin0:
+PC:   377	00		.Leh_frame_common_begin0:
+PC:   378	00		.Leh_frame_common_begin0:
+PC:   379	00		.Leh_frame_common_begin0:
+PC:   380	00		.Leh_frame_common_begin0:
+PC:   381	00		.Leh_frame_common_begin0:
+PC:   382	00		.Leh_frame_common_begin0:
+PC:   383	00		.Leh_frame_common_begin0:
+PC:   384	00000000	.long	0                       # CIE Identifier Tag
+PC:   388	0001		.byte	1                       # DW_CIE_VERSION
+PC:   389	0000		.byte	0                       # CIE Augmentation
+PC:   390	0041		.byte	65                      # CIE Return Address Column
+PC:   391	000c		.byte	12                      # DW_CFA_def_cfa
+PC:   392	00000000	.long	.Lset1
+PC:   396	00000000	.long	.Lset2
+PC:   400	00000000	.long	.Leh_func_begin0        # FDE initial location
+PC:   404	00000000	.long	.Lset3
+PC:   408	0004		.byte	4                       # DW_CFA_advance_loc4
+PC:   409	00000000	.long	.Lset4
+PC:   413	000e		.byte	14                      # DW_CFA_def_cfa_offset
+PC:   414	0011		.byte	17                      # DW_CFA_offset_extended_sf
+PC:   415	ffffff9c		.byte	156                     # DW_CFA_offset + Reg (28)
+PC:   416	ffffff9d		.byte	157                     # DW_CFA_offset + Reg (29)
+PC:   417	ffffff9e		.byte	158                     # DW_CFA_offset + Reg (30)
+PC:   418	00		.Leh_frame_end0:
+PC:   419	00		.Leh_frame_end0:

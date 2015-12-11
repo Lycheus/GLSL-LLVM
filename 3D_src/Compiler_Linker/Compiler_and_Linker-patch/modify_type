@@ -1,0 +1,30 @@
+grep -q "END\." $1 && cat $1 > OriginalIR || cat $1 > OriginalFIR
+sed 's/sampler2D/i32/g' $1 > temp
+sed 's/varying <2 x float>/varying <5 x float>/g' <temp >temp2
+sed 's/varying <3 x float>/varying <6 x float>/g' <temp2 >temp3
+sed 's/uniform <2 x float>/uniform <5 x float>/g' <temp3 >temp4
+sed 's/uniform <3 x float>/uniform <6 x float>/g' <temp4 >temp5
+sed 's/attribute <2 x float>/attribute <5 x float>/g' <temp5 >temp6
+sed 's/attribute <3 x float>/attribute <6 x float>/g' <temp6 >temp7
+sed 's/<[23] x float>/<4 x float>/g' <temp7 >temp8
+sed 's/<[23] x i1>/<4 x i1>/g' <temp8 >temp9
+#sed 's/<5 x float>/<2 x float>/g' <temp9 >temp10
+#sed 's/<6 x float>/<3 x float>/g' <temp10 >temp11
+#sed "s_@\(.*\)= highp <\(.*\)_@\1 = highp global <\2_g" <temp11 > temp12
+#sed "s_@\(.*\)= highp \[\(.*\)_@\1 = highp global \[\2_g" <temp12 > temp13
+#sed "s_@\(.*\)= highp float_@\1 = highp global float_g" <temp13 > $1.new 
+sed 's/<[23] x i32>/<4 x i32>/g' <temp9 >temp10
+sed 's/<5 x float>/<2 x float>/g' <temp10 >temp11
+sed 's/<6 x float>/<3 x float>/g' <temp11 >temp12
+sed "s_@\(.*\)= highp <\(.*\)_@\1 = highp global <\2_g" <temp12 > temp13
+sed "s_@\(.*\)= highp \[\(.*\)_@\1 = highp global \[\2_g" <temp13 > temp14
+sed "s_@\(.*\)= highp float_@\1 = highp global float_g" <temp14 > temp15
+sed 's/samplerCube/i32/g' <temp15 > temp16
+sed 's/;(/(/g' <temp16 > $1.new
+#sed 's/;(/(/g' <temp16 > temp17
+#sed 's/and highp i32/and highp i1/g' <temp17 > $1.new
+
+#sed 's/extractvalue highp\( [[][^ ]* x [^]]*[]]\)\( [^ ]*\)/getelementptr inbounds\1*\2 i64 0,/' < temp12 > $1.new
+rm $1 temp? temp temp??
+mv $1.new $1
+#cat $1 > gg

@@ -1,0 +1,44 @@
+#!/bin/tcsh
+echo "First arg is the test bench you compile. Secode arg is the directory in simulator."
+echo "Third arg is the object of morphinf ball. Fourth arg is the nth object of wall"
+make $1 &&./test_Compiler || echo  $4>> failed_for_confromance && exit
+rm c_model_output
+./bin_to_txt final_bin_vertex
+cp c_model_output ../../3D_src/simulator/new_simulator/systemc_VS_FS/VS_input/"$2"/txt_bin
+./dumpForFSSim.sh > g
+cp g ../../3D_src/simulator/new_simulator/systemc_VS_FS/FS_input/"$2"/txt_bin
+rm g
+cd ../../3D_src/simulator/new_simulator/systemc_VS_FS
+if( $3 == 10 ) then
+    if( $4 == "GL/vec3/vec3single_frag.frag" ) then
+       cp FS_input/test_VS/Uniform_for_vec3single_frag.txt  FS_input/test_VS/Uniform.txt
+       echo Single
+    else if ( $4 =~ "GL/vec3/vec3array*frag" ) then
+       cp FS_input/test_VS/Uniform_for_vec3array_frag.txt  FS_input/test_VS/Uniform.txt
+       echo Array
+    else if ( $4 =~ "GL/array/empty_uniform_*frag" ) then
+       cp FS_input/test_VS/Uniform_for_array_frag.txt FS_input/test_VS/Uniform.txt
+       echo empty_Array
+    else
+       echo "Did not change the FS Uniform files."
+    endif
+   ./test_shader > see
+    cp output/framebuff.txt ~/
+    cd ~
+    ./a.out
+    echo $4
+    mv result.ppm $4.ppm
+    exit
+endif
+if( $1 == "ball_VS" ) then
+    ./change_testbech morphing_ball
+    ./ball_setting $3 $4
+else if( $1 == "ocean" ) then
+    ./change_testbech ocean
+    ./ocean_setting $3 
+else if( $1 == "default_testbench" ) then
+    ./change_testbech test_VS
+else
+    ./change_testbech $1
+endif
+./test_shader > see 

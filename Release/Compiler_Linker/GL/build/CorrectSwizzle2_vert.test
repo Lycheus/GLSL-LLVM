@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!-- This tests the swizzle operator.                                        -->
+<!-- The fragment shader should fail to compile.                             -->
+<test mode="gl" pattern="build">
+	<compstat>true</compstat>
+	<linkstat>true</linkstat>
+	<shader>
+		<vertshader>CorrectSwizzle2_vert.vert</vertshader>
+		<fragshader>default.frag</fragshader>
+	</shader>
+</test>

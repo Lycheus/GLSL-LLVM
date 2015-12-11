@@ -1,0 +1,45 @@
+#dondum 2010-07-26	 #|sed -e 's/4x4/4 x 4/g'          
+			 #sed -e 's/> @/> %/g'|sed -e 's/%OpenGLES/@OpenGLES/g'|sed -e 's/[[:space:]]%main/ @main/g'|
+			 # [Solve this in subproj3Y1.]
+
+
+
+# cat $1 | awk '{if((substr($1,1,1)=="@")&&(old1==$1)&&(old2==$2)&&(old3==$4)&&(old4==$5)) {print "^"NR-1":"} {old1=$1;old2=$2;old3=$3;old4=$4 }}'|tr "\n" "|" | sed -e 's/\(.*:\)|/egrep -v \"(\1)\"/' > stripfile
+# chmod u+x stripfile
+#grep -n "^" $1 | ./stripfile | sed -e 's/[0-9][0-9]*://' | sed '1,/#### BEGIN COMPILER 0 INFO LOG ####/ d' | sed  '/#### END COMPILER 0 INFO LOG ####/,$ d'
+
+############################################ old info. ################################################
+
+#Remove the message we don't need.
+./Compiler_and_Linker-patch/modify_type $1
+
+egrep -v "^make\[|^make: |^#### |^cd ./|^cc |^g\+\+ |^ar |^r |^ranlib " $1 | sed -e 's/[0-9][0-9]*://' | 
+sed '/#### BEGIN COMPILER 0 INFO LOG ####/ d' | sed  '/#### END COMPILER 0 INFO LOG ####/,$ d' |
+
+#We can solve it in  'TllvmOutputTraverser::ConvertMangledFunctionName(string fnname)'.
+sed -e 's/\(.*@[^ :]*\):[^(]*/\1/'|
+
+#Add zeroinitializer
+awk '{if($0~"highp uniform") $0 = $0 " zeroinitializer"; print}'|awk '{if($0~"highp attribute") $0 = $0 " zeroinitializer"; print}'|awk '{if($0~"highp varying") $0 = $0 " zeroinitializer"; print}'|
+awk '{if($0~"highp global") $0 = $0 " zeroinitializer"; print}'|
+#Remove all highp
+sed -e 's/ highp//g'|sed -e 's/highp //g'|sed -e 's/highp//g'|
+
+
+#Make some variables to be local-variables in any function
+sed -e 's/\t@/\t%/g'|
+#[[:space:]]
+
+#Add entry & Call Start & return void
+#sed -e 's_) {_) {\nentry:_g'|
+#sed -e 's/@main() {/@main() {\nentry:\n\t%start = call <4 x float> @OpenGLES.Start()/g'| sed -e 's/^}/\nbr label %return\nreturn:\n\tret void\n}/g'|
+#sed -e 's/@main() {/@main() {\nentry:\n\t%start = call <4 x float> @OpenGLES.Start()/g'| sed -e 's/main function end/\nbr label %return\nreturn:\n\tret void/g'#|#comment this sed because it doesn't matter. (May be used in the future.)
+sed -e 's/@main() {/@main() {\nentry:\n\t%start = call <4 x float> @OpenGLES.Start()/g'| sed -e 's/main function end/\nbr label %return\nreturn:\n\tret void/g'#|#comment this sed because it doesn't matter. (May be used in the future.)
+
+
+
+#sed -e 's/> @/> %/g'|sed -e 's/%OpenGLES/@OpenGLES/g'|sed -e 's/[[:space:]]%main/ @main/g' |
+
+#fix texture cube
+ sed -e 's/call <4 x float> %tex/call <4 x float> @tex/g' #| sed -e 's/sampler2D @tex/sampler2D %tex/g'
+#rm new.vert*

@@ -1,0 +1,12 @@
+notEqual_vec2_frag.test
+notEqual_vec2_vert.test
+notEqual_vec3_frag.test
+notEqual_vec3_vert.test
+notEqual_ivec2_frag.test
+notEqual_ivec2_vert.test
+notEqual_ivec3_frag.test
+notEqual_ivec3_vert.test
+notEqual_bvec2_frag.test
+notEqual_bvec2_vert.test
+notEqual_bvec3_frag.test
+notEqual_bvec3_vert.test

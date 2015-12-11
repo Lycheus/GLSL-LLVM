@@ -1,0 +1,6 @@
+clamp_float_frag_xvary_yconstquarter.test
+clamp_vec2_frag_xvary_yconstquarter.test
+clamp_vec3_frag_xvary_yconstquarter.test
+clamp_float_vert_xvary_yconstquarter.test
+clamp_vec2_vert_xvary_yconstquarter.test
+clamp_vec3_vert_xvary_yconstquarter.test

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!-- This test tests basic functions with the following configuration:       -->
+<!-- return type = vec4                                                      -->
+<!-- const qualifier = empty                                                 -->
+<!-- parameter qualifier = out                                               -->
+<!-- parameter type = vec4                                                   -->
+<!-- array specifier = empty                                                 -->
+<test mode="gl" pattern="compare">
+	<shader>
+		<vertshader>../default/default.vert</vertshader>
+		<fragshader>vec4_empty_out_vec4_empty_frag.frag</fragshader>
+	</shader>
+	<shader>
+		<vertshader>../default/default.vert</vertshader>
+		<fragshader>../default/expected.frag</fragshader>
+		<uniform>
+			<name>result</name>
+			<uniform4fv>1.0 1.0 1.0 1.0</uniform4fv>
+		</uniform>
+	</shader>
+</test>

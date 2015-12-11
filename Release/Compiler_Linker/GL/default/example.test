@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!-- Notes:                                                                  -->
+<!-- *  All matrices are specified using row-major order and converted to    -->
+<!--    column-major order by the parser if necessary.                       -->
+<!-- *  No bounds checking is done by the application when the user          -->
+<!--    specifies an index (i.e. to ensure Light_Index < GL_MAXLIGHTS). This -->
+<!--    will allow us to write test cases to check these corner cases.       -->
+<!-- *  Currently the only mode that is supported is gl.                     -->
+<test mode="gl" pattern="compare">
+	<!-- Patterns:                                                       -->
+	<!-- * compare: will run all shaders listed and compare their        -->
+	<!--    outputs to a known good image (or the fist shader if no good -->
+	<!--    image is available.                                          -->
+	<!-- * GL2TestingFramework: is a pattern that wraps the old testing  -->
+	<!--    framework such that tests can be run in arbitrary order.     -->
+	<!-- * rasterization: is a pattern that compares data at the         -->
+	<!--    primitive rasterization level of the pipeline before the     -->
+	<!--    fragment program or texturing.                               -->
+
+	<!-- Good indicates that the test case has a known good image saved  -->
+	<!-- at example.good.bmp. No spaces or CR's allowed here.            -->
+	<good>false</good>
+
+	<!-- Currently only square (for fragment tests) and grid (for vertex -->
+	<!-- tests) is supported. No spaces or CR's allowed here.            -->
+	<!-- The following is allowed for backwards compatibility:           -->
+	<!-- <model>square</model>                                           -->
+	<!-- However, now I prefer to specify the model as follows. The      -->
+	<!-- Texture parameters are optional and square is the default       -->
+	<!-- model filename.                                                 -->
+	<model>
+		<!-- Built-in model filenames include: square, grid          -->
+		<!-- depthoffset, frontbacksquare                            -->
+		<!-- See Source/GL/GTFModelDataGL.cpp for more details.      -->
+		<filename>square</filename>
+
+		<!-- Multiple textures may be specified.                     -->
+		<!-- target may be: GL_TEXTURE_2D (default)          -->
+		<!--                GL_TEXTURE_1D                    -->
+		<texture target="GL_TEXTURE_2D">
+			<filename>../printnum/number_texture.bmp</filename>
+
+			<texparam>
+				<pname>GL_TEXTURE_MIN_FILTER</pname>
+
+				<!-- param may be: GL_NEAREST                -->
+				<!--               GL_LINEAR                 -->
+				<!--               GL_NEAREST_MIPMAP_NEAREST -->
+				<!--               GL_LINEAR_MIPMAP_NEAREST  -->
+				<!--               GL_NEAREST_MIPMAP_LINEAR  -->
+				<!--               GL_LINEAR_MIPMAP_LINEAR   -->
+				<param>GL_NEAREST</param>
+			</texparam>
+			<texparam>
+				<pname>GL_TEXTURE_MAG_FILTER</pname>
+
+				<!-- param may be: GL_NEAREST                -->
+				<!--               GL_LINEAR                 -->
+				<param>GL_LINEAR</param>
+			</texparam>
+			<texparam>
+				<pname>GL_TEXTURE_WRAP_S</pname>
+
+				<!-- param may be: GL_CLAMP                  -->
+				<!--               GL_REPEAT                 -->
+				<param>GL_REPEAT</param>
+			</texparam>
+			<texparam>
+				<pname>GL_TEXTURE_WRAP_T</pname>
+
+				<!-- param may be: GL_CLAMP                  -->
+				<!--               GL_REPEAT                 -->
+				<param>GL_REPEAT</param>
+			</texparam>
+			<texparam>
+				<pname>GL_TEXTURE_BORDER_COLOR</pname>
+				<param>0.0 0.0 0.0 0.0</param>
+			</texparam>
+		</texture>
+	</model>
+
+	<!-- Multiple shaders may be specified using the following syntax    -->
+	<shader>
+		<!-- Shader source files (Multiple vert/frag source files    -->
+		<!-- are supported)                                          -->
+		<!-- File extensions must end in "vert" or "frag"            -->
+		<vertshader>default.vert</vertshader>
+		<fragshader>default.frag</fragshader>
+
+		<!-- glUniform1fvARB                                         -->
+		<uniform>
+			<name>any_uniform_float</name>
+			<uniform1fv>1.0</uniform1fv>
+		</uniform>
+
+		<!-- glUniform1fARB                                          -->
+		<uniform>
+			<name>any_uniform_float</name>
+			<uniform1f>1.0</uniform1f>
+		</uniform>
+
+		<!-- glUniform2fvARB                                         -->
+		<uniform>
+			<name>any_uniform_vec2</name>
+			<uniform2fv>1.0 1.0</uniform2fv>
+		</uniform>
+
+		<!-- glUniform2fARB                                          -->
+		<uniform>
+			<name>any_uniform_vec2</name>
+			<uniform2f>1.0 1.0</uniform2fv>
+		</uniform>
+
+		<!-- glUniform3fvARB                                         -->
+		<uniform>
+			<name>any_uniform_vec3</name>
+			<uniform3fv>1.0 1.0 1.0</uniform3fv>
+		</uniform>
+
+		<!-- glUniform3fARB                                          -->
+		<uniform>
+			<name>any_uniform_vec2</name>
+			<uniform3f>1.0 1.0 1.0</uniform3f>
+		</uniform>
+
+		<!-- glUniform4fvARB                                         -->
+		<uniform>
+			<name>any_uniform_vec4</name>
+			<uniform4fv>1.0 1.0 1.0 1.0</uniform4fv>
+		</uniform>
+
+		<!-- glUniform4fARB                                          -->
+		<uniform>
+			<name>any_uniform_vec2</name>
+			<uniform4f>1.0 1.0 1.0 1.0</uniformf>
+		</uniform>
+
+		<!-- glUniform1ivARB                                         -->
+		<uniform>
+			<name>any_uniform_int</name>
+			<uniform1iv>1</uniform1iv>
+		</uniform>
+
+		<!-- glUniform1iARB                                          -->
+		<uniform>
+			<name>any_uniform_int</name>
+			<uniform1i>1</uniform1i>
+		</uniform>
+
+		<!-- glUniform2ivARB                                         -->
+		<uniform>
+			<name>any_uniform_ivec2</name>
+			<uniform2iv>1 1</uniform2iv>
+		</uniform>
+
+		<!-- glUniform2iARB                                          -->
+		<uniform>
+			<name>any_uniform_int</name>
+			<uniform2i>1 1</uniform2i>
+		</uniform>
+
+		<!-- glUniform3ivARB                                         -->
+		<uniform>
+			<name>any_uniform_ivec3</name>
+			<uniform3iv>1 1 1</uniform3iv>
+		</uniform>
+
+		<!-- glUniform3iARB                                          -->
+		<uniform>
+			<name>any_uniform_int</name>
+			<uniform3i>1 1 1</uniform2i>
+		</uniform>
+
+		<!-- glUniform4ivARB                                         -->
+		<uniform>
+			<name>any_uniform_ivec4</name>
+			<uniform4iv>1 1 1 1</uniform4iv>
+		</uniform>
+
+		<!-- glUniform4iARB                                         -->
+		<uniform>
+			<name>any_uniform_int</name>
+			<uniform4i>1 1 1 1</uniform4i>
+		</uniform>
+
+		<!-- Uniform matrices (transpose optional, false default).   -->
+		<!-- See glUniformMatrix*fvARB for details on transpose.     -->
+		<!-- Always specify uniform matrices using row-major         -->
+		<!-- notation, the parser will convert to column-major as    -->
+		<!-- necessary.                                              -->
+
+		<!-- glUniformMatrix2fvARB                                   -->
+		<uniform>
+			<name>any_uniform_mat2</name>
+			<transpose>false</transpose>
+			<uniformmat2fv>
+				1.0 0.0
+				0.0 1.0
+			</uniformmat2fv>
+		</uniform>
+
+		<!-- glUniformMatrix3fvARB                                   -->
+		<uniform>
+			<name>any_uniform_mat3</name>
+			<transpose>false</transpose>
+			<uniformmat3fv>
+				1.0 0.0 0.0
+				0.0 1.0 0.0
+				0.0 0.0 1.0
+			</uniformmat3fv>
+		</uniform>
+
+		<!-- glUniformMatrix3fvARB                                   -->
+		<uniform>
+			<name>any_uniform_mat4</name>
+			<uniformmat4fv>
+				1.0 0.0 0.0 0.0
+				0.0 1.0 0.0 0.0
+				0.0 0.0 1.0 0.0
+				0.0 0.0 0.0 1.0
+			</uniformmat4fv>
+		</uniform>
+
+		<!-- Uniform arrays (can be any uniform type listed above)   -->
+		<!-- i.e. uniform1fv, uniform4fv, uniformmat3fv, ...         -->
+		<!-- Set the count parameter before the value.               -->
+
+		<!-- glUniform1fvARB                                         -->
+		<uniform>
+			<name>array_of_uniform_float</name>
+			<count>10</count>
+			<uniform1fv>0 1 2 3 4 5 6 7 8 9</uniform1fv>
+		</uniform>
+
+		<!-- glUniformMatrix2fvARB                                   -->
+		<uniform>
+			<name>array_of_uniform_mat2</name>
+			<count>2</count>
+			<transpose>false</transpose>
+			<uniformmat2fv>
+				1 0
+				0 1
+				2 0
+				0 2
+			</uniformmat2fv>
+		</uniform>
+	</shader>
+
+	<!-- Built-in uniforms used to set the OpenGL state                  -->
+	<!-- You only need to specify the parameters that you wish to change -->
+	<!-- in the OpenGL state.                                            --> 
+	<!-- (except the index attribute which is required)                  -->
+	<glstate>
+		<lightsource index="0">
+			<ambient>0.0 0.0 0.0 1.0</ambient>
+			<diffuse>1.0 1.0 1.0 1.0</diffuse>
+			<specular>1.0 1.0 1.0 1.0</specular>
+			<position>0.0 0.0 1.0 0.0</position>
+			<spotDirection>0.0 0.0 -1.0</spotDirection>
+			<spotExponent>0.0</spotExponent>
+			<spotCutoff>180.0</spotCutoff>
+			<constantAttenuation>1.0</constantAttenuation>
+			<linearAttenuation>0.0</linearAttenuation>
+			<quadraticAttenuation>0.0</quadraticAttenuation>
+		</lightsource>
+		<lightsource index="1">
+			<ambient>0.0 0.0 0.0 1.0</ambient>
+			<diffuse>0.0 0.0 0.0 1.0</diffuse>
+			<specular>0.0 0.0 0.0 1.0</specular>
+			<position>0.0 0.0 1.0 0.0</position>
+			<spotDirection>0.0 0.0 -1.0</spotDirection>
+			<spotExponent>0.0</spotExponent>
+			<spotCutoff>180.0</spotCutoff>
+			<constantAttenuation>1.0</constantAttenuation>
+			<linearAttenuation>0.0</linearAttenuation>
+			<quadraticAttenuation>0.0</quadraticAttenuation>
+		</lightsource>
+		<frontmaterial>
+			<emission>0.0 0.0 0.0 1.0</emission>
+			<ambient>0.2 0.2 0.2 1.0</ambient>
+			<diffuse>0.8 0.8 0.8 1.0</diffuse>
+			<specular>0.0 0.0 0.0 1.0</specular>
+			<shininess>0.0</shininess>
+		</frontmaterial>
+		<backmaterial>
+			<emission>0.0 0.0 0.0 1.0</emission>
+			<ambient>0.2 0.2 0.2 1.0</ambient>
+			<diffuse>0.8 0.8 0.8 1.0</diffuse>
+			<specular>0.0 0.0 0.0 1.0</specular>
+			<shininess>0.0</shininess>
+		</backmaterial>
+		<lightmodel>
+			<ambient>0.2 0.2 0.2 1.0</ambient>
+		</lightmodel>
+		<point>
+			<vertexprogrampointsize>false</vertexprogrampointsize>
+			<size>1.0</size>
+			<sizeMin>0.0</sizeMin>
+			<sizeMax>1.0</sizeMax>
+			<fadeThresholdSize>1.0</fadeThresholdSize>
+			<distanceAttenuation>1.0 0.0 0.0</distanceAttenuation>
+		</point>
+		<fog>
+			<color>0.0 0.0 0.0 0.0</color>
+			<density>1.0</density>
+			<start>0.0</start>
+			<end>1.0</end>
+		</fog>
+		<modelviewmatrix>
+			1.0 0.0 0.0 0.0
+			0.0 1.0 0.0 0.0
+			0.0 0.0 1.0 0.0
+			0.0 0.0 0.0 1.0
+		</modelviewmatrix>
+		<modelviewmatrixtranspose>
+			1.0 0.0 0.0 0.0
+			0.0 1.0 0.0 0.0
+			0.0 0.0 1.0 0.0
+			0.0 0.0 0.0 1.0
+		</modelviewmatrixtranspose>
+		<projectionmatrix>
+			1.0 0.0 0.0 0.0
+			0.0 1.0 0.0 0.0
+			0.0 0.0 1.0 0.0
+			0.0 0.0 0.0 1.0
+		</projectionmatrix>
+		<projectionmatrixtranspose>
+			1.0 0.0 0.0 0.0
+			0.0 1.0 0.0 0.0
+			0.0 0.0 1.0 0.0
+			0.0 0.0 0.0 1.0
+		</projectionmatrixtranspose>
+		<texturematrix index="0">
+			1.0 0.0 0.0 0.0
+			0.0 1.0 0.0 0.0
+			0.0 0.0 1.0 0.0
+			0.0 0.0 0.0 1.0
+		</texturematrix>
+		<texturematrixtranspose index="0">
+			1.0 0.0 0.0 0.0
+			0.0 1.0 0.0 0.0
+			0.0 0.0 1.0 0.0
+			0.0 0.0 0.0 1.0
+		</texturematrixtranspose>
+		<depthrange>
+			<near>0.0</near>
+			<far>1.0</far>
+		</depthrange>
+		<normalize>false</normalize>
+		<clipplane index="0">0.0 0.0 0.0 0.0</clipplane>
+		<textureenvcolor index="0">0.0 0.0 0.0 0.0</textureenvcolor>
+		<eyeplanes index="0">0.0 0.0 0.0 0.0</eyeplanes>
+		<eyeplanet index="0">0.0 0.0 0.0 0.0</eyeplanet>
+		<eyeplaner index="0">0.0 0.0 0.0 0.0</eyeplaner>
+		<eyeplaneq index="0">0.0 0.0 0.0 0.0</eyeplaneq>
+		<objectplanes index="0">0.0 0.0 0.0 0.0</objectplanes>
+		<objectplanet index="0">0.0 0.0 0.0 0.0</objectplanet>
+		<objectplaner index="0">0.0 0.0 0.0 0.0</objectplaner>
+		<objectplaneq index="0">0.0 0.0 0.0 0.0</objectplaneq>
+		<vertex_program_two_side>false</vertex_program_two_side>
+	</glstate>
+
+	<!-- Only supported in rasterization patterns                        -->
+	<drawpixels>
+		<width>500</width>
+		<heigth>500</width>
+		<format>GL_RGBA</format>
+		<type>GL_UNSIGNED_BYTE</type>
+		<pixelcreator>gradient</pixelcreator>
+	</drawpixels>
+	<readpixels>
+		<x>0</x>
+		<y>0</y>
+		<width>500</width>
+		<heigth>500</width>
+		<format>GL_RGBA</format>
+		<type>GL_UNSIGNED_BYTE</type>
+	</readpixels>
+</test>

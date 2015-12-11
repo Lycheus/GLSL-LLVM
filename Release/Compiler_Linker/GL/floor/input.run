@@ -1,0 +1,6 @@
+floor_float_frag_xvary.test
+floor_vec2_frag_xvary.test
+floor_vec3_frag_xvary.test
+floor_float_vert_xvary.test
+floor_vec2_vert_xvary.test
+floor_vec3_vert_xvary.test

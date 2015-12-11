@@ -1,0 +1,12 @@
+exp2_float_frag_xvary.test
+exp2_vec2_frag_xvary.test
+exp2_vec3_frag_xvary.test
+exp2_float_frag_xvaryneg.test
+exp2_vec2_frag_xvaryneg.test
+exp2_vec3_frag_xvaryneg.test
+exp2_float_vert_xvary.test
+exp2_vec2_vert_xvary.test
+exp2_vec3_vert_xvary.test
+exp2_float_vert_xvaryneg.test
+exp2_vec2_vert_xvaryneg.test
+exp2_vec3_vert_xvaryneg.test

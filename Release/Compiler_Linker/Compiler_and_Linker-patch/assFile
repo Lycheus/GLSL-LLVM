@@ -1,0 +1,617 @@
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <0>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <0>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>
+	DPF R7.1000, R2.xyzw, R6.xyzw, <4>
+	DPF R7.0100, R2.xyzw, R5.xyzw, <4>
+	DPF R7.0010, R2.xyzw, R4.xyzw, <4>
+	DPF R7.0001, R2.xyzw, R3.xyzw, <4>
+	MVR R2.1111, R7.xyzw, <4>

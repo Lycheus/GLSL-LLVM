@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!-- This tests that varyings can not be written to in the fragment shader.  -->
+<!-- The fragment shader should fail to compile.                             -->
+<test mode="gl" pattern="build">
+	<compstat>false</compstat>
+	<linkstat>false</linkstat>
+	<shader>
+		<vertshader>../default/default.vert</vertshader>
+		<fragshader>dataType9_frag.frag</fragshader>
+	</shader>
+</test>

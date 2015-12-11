@@ -1,0 +1,8 @@
+lessThanEqual_vec2_frag.test
+lessThanEqual_vec2_vert.test
+lessThanEqual_vec3_frag.test
+lessThanEqual_vec3_vert.test
+lessThanEqual_ivec2_frag.test
+lessThanEqual_ivec2_vert.test
+lessThanEqual_ivec3_frag.test
+lessThanEqual_ivec3_vert.test

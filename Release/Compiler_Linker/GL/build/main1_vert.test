@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!-- This tests that the return type of main is void.                        -->
+<!-- The fragment shader should fail to compile.                             -->
+<test mode="gl" pattern="build">
+	<compstat>false</compstat>
+	<linkstat>false</linkstat>
+	<shader>
+		<vertshader>main1_vert.vert</vertshader>
+		<fragshader>default.frag</fragshader>
+	</shader>
+</test>

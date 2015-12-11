@@ -1,0 +1,6 @@
+degrees_float_frag_xvary.test
+degrees_vec2_frag_xvary.test
+degrees_vec3_frag_xvary.test
+degrees_float_vert_xvary.test
+degrees_vec2_vert_xvary.test
+degrees_vec3_vert_xvary.test

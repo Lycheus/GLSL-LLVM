@@ -1,0 +1,6 @@
+dot_float_frag_xvaryyone.test
+dot_vec2_frag_xvaryyhalf.test
+dot_vec3_frag_xvaryythird.test
+dot_float_vert_xvaryyone.test
+dot_vec2_vert_xvaryyhalf.test
+dot_vec3_vert_xvaryythird.test

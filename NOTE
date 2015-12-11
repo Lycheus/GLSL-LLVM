@@ -1,0 +1,5 @@
+
+"Release" directory can't be updated. You should only update in the 3D_src directory.
+
+At the first time you download the files. You should make the llvm first, because the files don't include the llvm object code.
+

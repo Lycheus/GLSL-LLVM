@@ -1,0 +1,3 @@
+cp orig_testbench.h testbench.h
+echo "#define $1" >> testbench.h
+make

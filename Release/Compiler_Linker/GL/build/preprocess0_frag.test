@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!-- This tests for else elif mismatches.                                    -->
+<!-- The fragment shader should fail to compile.                             -->
+<test mode="gl" pattern="build">
+	<compstat>false</compstat>
+	<linkstat>false</linkstat>
+	<shader>
+		<vertshader>../default/default.vert</vertshader>
+		<fragshader>preprocess0_frag.frag</fragshader>
+	</shader>
+</test>

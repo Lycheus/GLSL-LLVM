@@ -1,0 +1,22 @@
+attribute vec4 rm_Vertex;
+attribute vec3 rm_Normal;
+attribute vec2 texcoord;
+
+uniform mat4 ModelViewMatrix1;
+uniform mat4 ModelViewMatrix;
+uniform mat4 ProjectionMatrix;
+
+varying vec2 texcoord0;
+
+void main()
+{	
+//  the following three lines provide the same result
+//	gl_Position = gl_ProjectionMatrix * gl_ModelViewMatrix * gl_Vertex;
+//	gl_Position = ModelViewMatrix * gl_Vertex;
+//	gl_Position = mat4(1,0,0,0,0,1,0,0,0,0,1,0,vec4(d)) * ftransform();
+//	gl_Position = mat4(1,0,0,0,0,1,0,0,vec4(tr),vec4(tr)) * gl_ModelViewProjectionMatrix * pos;
+	
+	texcoord0 = texcoord;
+// 	gl_Position =  rm_Vertex * ModelViewMatrix1 * ModelViewMatrix * ProjectionMatrix;
+ 	gl_Position =  ProjectionMatrix * ModelViewMatrix * ModelViewMatrix1 * rm_Vertex ;
+}

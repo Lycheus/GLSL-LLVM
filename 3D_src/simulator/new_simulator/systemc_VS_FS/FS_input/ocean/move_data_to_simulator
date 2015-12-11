@@ -1,0 +1,44 @@
+#!/bin/tcsh
+
+if ( $1 == "plane" ) then
+    cp plane.bmp texture.bmp
+    cp plane_uniform Uniform1.txt
+endif
+
+if ( $1 == "glow1" ) then
+    cp glow.bmp texture.bmp
+    cp glow_uniform Uniform1.txt
+endif
+
+if ( $1 == "glow2" ) then
+    cp glow.bmp texture.bmp
+    cp glow_uniform Uniform1.txt
+endif
+
+if ( $1 == "sky" ) then
+#    cp sky_1024.bmp texture.bmp
+    cp sky_256.bmp texture.bmp
+    cp sky_uniform Uniform1.txt
+endif
+
+if ( $1 == "jet" ) then
+    cp jet_uniform Uniform1.txt
+    cp glow.bmp texture.bmp
+endif
+
+if ( $1 == "sun" ) then
+    cp sun_uniform.txt Uniform1.txt
+endif
+
+if ( $1 == "ocean" ) then
+    cp plane.bmp texture.bmp
+    cp ocean_uniform.txt Uniform1.txt
+endif
+
+
+#if ( $1 == "sky" ) then
+#    cp sky_1024.bmp texture.bmp
+#    cp sky_uniform Uniform1.txt
+#endif
+
+

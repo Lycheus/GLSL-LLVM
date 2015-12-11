@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<test mode="gl" pattern="compare">
+	<model>grid</model>
+	<shader>
+		<vertshader>cross_vec3_vert_xvaryyconst.vert</vertshader>
+		<fragshader>../default/default.frag</fragshader>
+	</shader>
+	<shader>
+		<vertshader>cross_vec3_vert_xvaryyconst_ref.vert</vertshader>
+		<fragshader>../default/default.frag</fragshader>
+	</shader>
+</test>

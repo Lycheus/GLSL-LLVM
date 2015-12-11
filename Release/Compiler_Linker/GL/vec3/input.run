@@ -1,0 +1,8 @@
+vec3array_frag.test
+vec3single_vert.test
+vec3arrayindirect_vert.test
+vec3arraydirect_vert.test
+vec3array_vert.test
+vec3single_frag.test
+vec3arrayindirect_frag.test
+vec3arraydirect_frag.test

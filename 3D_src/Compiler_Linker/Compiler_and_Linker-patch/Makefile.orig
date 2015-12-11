@@ -1,0 +1,46 @@
+MAKE_SO_GLSLANG=./glslang/MachineIndependent
+MAKE_O_STANEALONE_INLINEFUNCTION_LOADIR=./StandAlone
+MAKE_LLVM=./llvm-obj
+LLVM_SOURCE_FROM_LLVM_OBJ_DIR=../llvm-source
+
+CC=arm-none-linux-gnueabi-gcc
+CCC=arm-none-linux-gnueabi-g++
+AR=arm-none-linux-gnueabi-ar
+
+default: all
+
+all: compile_llvm compiler.o linker.o GLCompiler.o inlineFunction.o StandAlone/StandAlone
+#$(CC) Sub3y1_LLVM.c -o glCompileShader
+	$(CCC) compiler.o linker.o GLCompiler.o inlineFunction.o -o test_glCompiler
+
+ConvertSO.a:
+	cd $(MAKE_SO_GLSLANG); make clean;make
+	mv $(MAKE_SO_GLSLANG)/ConvertSO.a .
+
+StandAlone/StandAlone: StandAlone/StandAlone.cpp ConvertSO.a
+	$(CCC) ./StandAlone/StandAlone.cpp ConvertSO.a -o ./StandAlone/StandAlone -lpthread
+
+compile_llvm:
+#cd $(MAKE_LLVM);$(LLVM_SOURCE_FROM_LLVM_OBJ_DIR)/configure --enable-targers=all CXX=arm-none-linux-gnueabi-g++ CC=arm-none-linux-gnueabi-gcc --host=arm-none-linux-gnu --build=X86_64-unknown-linux-gnu;make
+
+compiler.o: Sub3y1_LLVM.c 
+	$(CCC) -c Sub3y1_LLVM.c -o compiler.o
+
+linker.o: linker.c
+	$(CCC) -c linker.c
+
+GLCompiler.o: GLCompiler.cpp
+	$(CCC) -c GLCompiler.cpp
+
+inlineFunction.o: inlineFunction.cpp
+	$(CCC) -c inlineFunction.cpp
+
+clean_glslang:
+	cd $(MAKE_SO_GLSLANG); make clean
+
+clean_llvm:
+#cd $(MAKE_LLVM);make clean
+
+clean: clean_glslang clean_llvm
+	rm *.o *.a
+

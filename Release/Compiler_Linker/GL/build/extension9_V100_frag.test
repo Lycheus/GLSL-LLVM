@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!-- This tests for missing ':' after extension name.                        -->
+<!-- The fragment shader should fail to compile.                             -->
+<test mode="gl" pattern="build">
+	<compstat>false</compstat>
+	<linkstat>false</linkstat>
+	<shader>
+		<vertshader>../default/default.vert</vertshader>
+		<fragshader>extension9_V100_frag.frag</fragshader>
+	</shader>
+</test>

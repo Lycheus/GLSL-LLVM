@@ -1,0 +1,16 @@
+gl_MaxCombinedTextureImageUnits_frag.test
+gl_MaxCombinedTextureImageUnits_vert.test
+gl_MaxDrawBuffers_frag.test
+gl_MaxDrawBuffers_vert.test
+gl_MaxFragmentUniformVectors_frag.test
+gl_MaxFragmentUniformVectors_vert.test
+gl_MaxTextureImageUnits_frag.test
+gl_MaxTextureImageUnits_vert.test
+gl_MaxVaryingVectors_frag.test
+gl_MaxVaryingVectors_vert.test
+gl_MaxVertexAttribs_frag.test
+gl_MaxVertexAttribs_vert.test
+gl_MaxVertexTextureImageUnits_frag.test
+gl_MaxVertexTextureImageUnits_vert.test
+gl_MaxVertexUniformVectors_frag.test
+gl_MaxVertexUniformVectors_vert.test

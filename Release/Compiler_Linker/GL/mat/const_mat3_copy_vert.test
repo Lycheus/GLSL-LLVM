@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!-- This test creates a 3 by 3 constant matrix with unique values.  Then a  -->
+<!-- non-constant copy is created.  Next each element of the copy is         -->
+<!-- verified.  Then the sum of each row and each column is verified.  The   -->
+<!-- vertex shader renders white if successful and black otherwise.          -->
+<test mode="gl" pattern="compare">
+	<shader>
+		<vertshader>const_mat3_copy_vert.vert</vertshader>
+		<fragshader>../default/default.frag</fragshader>
+	</shader>
+	<shader>
+		<vertshader>../default/default.vert</vertshader>
+		<fragshader>../default/expected.frag</fragshader>
+		<uniform>
+			<name>result</name>
+			<uniform4fv>1.0 1.0 1.0 1.0</uniform4fv>
+		</uniform>
+	</shader>
+</test>

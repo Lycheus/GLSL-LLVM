@@ -1,0 +1,8 @@
+lessThan_vec2_frag.test
+lessThan_vec2_vert.test
+lessThan_vec3_frag.test
+lessThan_vec3_vert.test
+lessThan_ivec2_frag.test
+lessThan_ivec2_vert.test
+lessThan_ivec3_frag.test
+lessThan_ivec3_vert.test

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!-- This tests that attributes can not be int or bool.                      -->
+<!-- The fragment shader should fail to compile.                             -->
+<test mode="gl" pattern="build">
+	<compstat>false</compstat>
+	<linkstat>false</linkstat>
+	<shader>
+		<vertshader>attribute1_vert.vert</vertshader>
+		<fragshader>default.frag</fragshader>
+	</shader>
+</test>

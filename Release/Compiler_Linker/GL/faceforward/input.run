@@ -1,0 +1,6 @@
+faceforward_float_frag_nvaryiconst.test
+faceforward_float_vert_nvaryiconst.test
+faceforward_vec2_frag_nvaryiconst.test
+faceforward_vec2_vert_nvaryiconst.test
+faceforward_vec3_frag_nvaryiconst.test
+faceforward_vec3_vert_nvaryiconst.test

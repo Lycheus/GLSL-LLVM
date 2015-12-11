@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<test mode="gl" pattern="shaderload">
+	<testnum>6</testnum>
+	<model>
+		<filename>square</filename>
+	</model>
+	<glerror>GL_NO_ERROR</glerror>
+	<shader>
+		<vertshader>../default/default.vert</vertshader>
+		<fragshader>../default/default.frag</fragshader>
+	</shader>	
+</test>

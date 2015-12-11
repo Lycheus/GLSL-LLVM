@@ -1,0 +1,784 @@
+	.file	"fragment.bc"
+	.section	.debug_frame,"",@progbits
+.LCPI1_0:                               # constant pool float
+	.long	0                       # float 0.000000e+00
+.LCPI1_1:                               # constant pool float
+	.long	1053028103              # float 3.826830e-01
+.LCPI1_2:                               # constant pool float
+	.long	1060439287              # float 7.071070e-01
+.LCPI1_3:                               # constant pool float
+	.long	1064076134              # float 9.238800e-01
+.LCPI1_4:                               # constant pool float
+	.long	1065353216              # float 1.000000e+00
+.LCPI1_5:                               # constant pool float
+	.long	3200511751              # float -3.826830e-01
+.LCPI1_6:                               # constant pool float
+	.long	3207922935              # float -7.071070e-01
+.LCPI1_7:                               # constant pool float
+	.long	3211559782              # float -9.238800e-01
+.LCPI1_8:                               # constant pool float
+	.long	3212836864              # float -1.000000e+00
+.LCPI1_9:                               # constant pool float
+	.long	3211559766              # float -9.238790e-01
+.LCPI1_10:                              # constant pool float
+	.long	1078530011              # float 3.141593e+00
+.LCPI1_11:                              # constant pool float
+	.long	1076033923              # float 2.546479e+00
+.LCPI1_12:                              # constant pool float
+	.long	1056964608              # float 5.000000e-01
+	.text
+	.globl	main
+	.align	2
+	.type	main,@function
+.Lsection_debug_frame:
+	.section	.debug_info,"",@progbits
+.Lsection_info:
+	.section	.debug_abbrev,"",@progbits
+.Lsection_abbrev:
+	.section	.debug_aranges,"",@progbits
+	.section	.debug_macinfo,"",@progbits
+	.section	.debug_line,"",@progbits
+.Lsection_line:
+	.section	.debug_loc,"",@progbits
+	.section	.debug_pubnames,"",@progbits
+	.section	.debug_pubtypes,"",@progbits
+	.section	.debug_str,"",@progbits
+.Lsection_str:
+	.section	.debug_ranges,"",@progbits
+.Ldebug_range:
+	.section	.debug_loc,"",@progbits
+.Lsection_debug_loc:
+	.text
+.Ltext_begin:
+	.data
+	.text
+	.globl	lerp
+	.align	2
+	.type	lerp,@function
+
+	.section	.rodata.cst4,"aM",@progbits,4
+	.align	2
+main:                                   # @main
+.Leh_func_begin1:
+# BB#0:                                 # %entry
+.Ltmp1:
+	BL OpenGLES.Start		# size:4
+	ADDI r22, r0, .LCPI1_0@ha
+	LDV R3.1000, .LCPI1_0@l(22) set_mark_4
+	MVR R22.1000, R3.xyzw, <4>
+	LDV R3.1000, 24(1) 		# LDV R3.1000, 24(1) set_mark_4
+	MVR R4.1000, R3.xyzw, <4>
+	ADDI r5, r0, .LCPI1_1@ha
+	MULF r4, r4, r22
+	ADDF r4, r4, r22
+	STV r4.1000, 24(1), <1>		# STV r4.1000, 24(1), <1> set_mark_4
+	LDV R3.1000, 25(1) 		# LDV R3.1000, 25(1) set_mark_4
+	MVR R4.1000, R3.xyzw, <4>
+	LDV R3.1000, .LCPI1_1@l(5) 		# LDV R3.1000, .LCPI1_1@l(5) set_mark_4
+	MVR R5.1000, R3.xyzw, <4>
+	MULF r4, r4, r22
+	ADDF r4, r4, r5
+	STV r4.1000, 25(1), <1>		# STV r4.1000, 25(1), <1> set_mark_4
+	ADDI r4, r0, .LCPI1_2@ha
+	LDV R3.1000, 26(1) 		# LDV R3.1000, 26(1) set_mark_4
+	MVR R6.1000, R3.xyzw, <4>
+	LDV R3.1000, .LCPI1_2@l(4) 		# LDV R3.1000, .LCPI1_2@l(4) set_mark_4
+	MVR R4.1000, R3.xyzw, <4>
+	MULF r6, r6, r22
+	ADDF r6, r6, r4
+	STV r6.1000, 26(1), <1>		# STV r6.1000, 26(1), <1> set_mark_4
+	ADDI r6, r0, .LCPI1_3@ha
+	LDV R3.1000, 27(1) 		# LDV R3.1000, 27(1) set_mark_4
+	MVR R7.1000, R3.xyzw, <4>
+	LDV R3.1000, .LCPI1_3@l(6) 		# LDV R3.1000, .LCPI1_3@l(6) set_mark_4
+	MVR R6.1000, R3.xyzw, <4>
+	MULF r7, r7, r22
+	ADDF r7, r7, r6
+	STV r7.1000, 27(1), <1>		# STV r7.1000, 27(1), <1> set_mark_4
+	ADDI r7, r0, .LCPI1_4@ha
+	LDV R3.1000, 28(1) 		# LDV R3.1000, 28(1) set_mark_4
+	MVR R8.1000, R3.xyzw, <4>
+	LDV R3.1000, .LCPI1_4@l(7) 		# LDV R3.1000, .LCPI1_4@l(7) set_mark_4
+	MVR R21.1000, R3.xyzw, <4>
+	MULF r7, r8, r22
+	ADDF r7, r7, r21
+	STV r7.1000, 28(1), <1>		# STV r7.1000, 28(1), <1> set_mark_4
+	LDV R3.1000, 29(1) 		# LDV R3.1000, 29(1) set_mark_4
+	MVR R7.1000, R3.xyzw, <4>
+	ADDI r8, r0, .LCPI1_5@ha
+	MULF r7, r7, r22
+	ADDF r6, r7, r6
+	STV r6.1000, 29(1), <1>		# STV r6.1000, 29(1), <1> set_mark_4
+	LDV R3.1000, 30(1) 		# LDV R3.1000, 30(1) set_mark_4
+	MVR R6.1000, R3.xyzw, <4>
+	LDV R3.1000, .LCPI1_5@l(8) 		# LDV R3.1000, .LCPI1_5@l(8) set_mark_4
+	MVR R7.1000, R3.xyzw, <4>
+	MULF r6, r6, r22
+	ADDF r4, r6, r4
+	STV r4.1000, 30(1), <1>		# STV r4.1000, 30(1), <1> set_mark_4
+	LDV R3.1000, 31(1) 		# LDV R3.1000, 31(1) set_mark_4
+	MVR R4.1000, R3.xyzw, <4>
+	ADDI r6, r0, .LCPI1_6@ha
+	MULF r4, r4, r22
+	ADDF r4, r4, r5
+	STV r4.1000, 31(1), <1>		# STV r4.1000, 31(1), <1> set_mark_4
+	LDV R3.1000, 32(1) 		# LDV R3.1000, 32(1) set_mark_4
+	MVR R4.1000, R3.xyzw, <4>
+	LDV R3.1000, .LCPI1_6@l(6) 		# LDV R3.1000, .LCPI1_6@l(6) set_mark_4
+	MVR R5.1000, R3.xyzw, <4>
+	MULF r4, r4, r22
+	ADDF r4, r4, r22
+	STV r4.1000, 32(1), <1>		# STV r4.1000, 32(1), <1> set_mark_4
+	LDV R3.1000, 33(1) 		# LDV R3.1000, 33(1) set_mark_4
+	MVR R4.1000, R3.xyzw, <4>
+	ADDI r6, r0, .LCPI1_7@ha
+	MULF r4, r4, r22
+	ADDF r4, r4, r7
+	STV r4.1000, 33(1), <1>		# STV r4.1000, 33(1), <1> set_mark_4
+	LDV R3.1000, 34(1) 		# LDV R3.1000, 34(1) set_mark_4
+	MVR R4.1000, R3.xyzw, <4>
+	LDV R3.1000, .LCPI1_7@l(6) 		# LDV R3.1000, .LCPI1_7@l(6) set_mark_4
+	MVR R6.1000, R3.xyzw, <4>
+	MULF r4, r4, r22
+	ADDF r4, r4, r5
+	STV r4.1000, 34(1), <1>		# STV r4.1000, 34(1), <1> set_mark_4
+	LDV R3.1000, 35(1) 		# LDV R3.1000, 35(1) set_mark_4
+	MVR R4.1000, R3.xyzw, <4>
+	ADDI r8, r0, .LCPI1_8@ha
+	MULF r4, r4, r22
+	ADDF r4, r4, r6
+	STV r4.1000, 35(1), <1>		# STV r4.1000, 35(1), <1> set_mark_4
+	LDV R3.1000, 36(1) 		# LDV R3.1000, 36(1) set_mark_4
+	MVR R4.1000, R3.xyzw, <4>
+	LDV R3.1000, .LCPI1_8@l(8) 		# LDV R3.1000, .LCPI1_8@l(8) set_mark_4
+	MVR R6.1000, R3.xyzw, <4>
+	MULF r4, r4, r22
+	ADDF r4, r4, r6
+	STV r4.1000, 36(1), <1>		# STV r4.1000, 36(1), <1> set_mark_4
+	ADDI r4, r0, .LCPI1_9@ha
+	LDV R3.1000, 37(1) 		# LDV R3.1000, 37(1) set_mark_4
+	MVR R6.1000, R3.xyzw, <4>
+	LDV R3.1000, .LCPI1_9@l(4) 		# LDV R3.1000, .LCPI1_9@l(4) set_mark_4
+	MVR R4.1000, R3.xyzw, <4>
+	MULF r6, r6, r22
+	ADDF r4, r6, r4
+	STV r4.1000, 37(1), <1>		# STV r4.1000, 37(1), <1> set_mark_4
+	LDV R3.1000, 38(1) 		# LDV R3.1000, 38(1) set_mark_4
+	MVR R4.1000, R3.xyzw, <4>
+	ADDI r20, r1, 23
+	MULF r4, r4, r22
+	ADDF r4, r4, r5
+	STV r4.1000, 38(1), <1>		# STV r4.1000, 38(1), <1> set_mark_4
+	LDV R3.1000, 39(1) 		# LDV R3.1000, 39(1) set_mark_4
+	MVR R4.1000, R3.xyzw, <4>
+	ADDI r5, r0, .LCPI1_10@ha
+	MULF r4, r4, r22
+	ADDF r4, r4, r7
+	STV r4.1000, 39(1), <1>		# STV r4.1000, 39(1), <1> set_mark_4
+	LDV R3.1000, 40(1) 		# LDV R3.1000, 40(1) set_mark_4
+	MVR R4.1000, R3.xyzw, <4>
+	LDV R3.1000, .LCPI1_10@l(5) 		# LDV R3.1000, .LCPI1_10@l(5) set_mark_4
+	MVR R19.1000, R3.xyzw, <4>
+	MULF r4, r4, r22
+	ADDF r4, r4, r22
+	STV r4.1000, 40(1), <1>		# STV r4.1000, 40(1), <1> set_mark_4
+	ADDI r4, r0, .LCPI1_11@ha
+	LDV R3.1000, .LCPI1_11@l(4) 		# LDV R3.1000, .LCPI1_11@l(4) set_mark_4
+	MVR R18.1000, R3.xyzw, <4>
+	BL OpenGLES.LoadVarying4.color.0 # size:4
+	ADD R3, R0, R20
+	STV R16, 0(R3), set_mark_3		# STV R16, 0(R3) set_mark_3       # size:4
+	LDV R3.1000, 23(1) 		# LDV R3.1000, 23(1) set_mark_4
+	MVR R4.1000, R3.xyzw, <4>       # size:4
+	ADDI r20, r0, 0
+	MULF r4, r4, r19
+	ADDF r19, r4, r4
+	STV r19.1000, 92(1), <1>		# STV r19.1000, 92(1), <1> set_mark_4
+	MULF r17, r19, r18
+	STV r17.1000, 96(1), <1>		# STV r17.1000, 96(1), <1> set_mark_4
+	MVR R15.1111, R17.xyzw, <4>
+	BL OpenGLES.Floor.f
+	MVR R4.1111, R16.xyzw, <4>
+	MVR R15.1111, R4.xyzw, <4>
+	BL OpenGLES.Convert.fptosi
+	MVR R16.1111, R16.xyzw, <4>
+	MVR R15.1111, R17.xyzw, <4>
+	BL OpenGLES.Floor.f
+	MVR R4.1111, R16.xyzw, <4>
+	MULF R3, R19, R18
+	SUBF R4, R3, R4
+	STV r4.1000, 104(1), <1>		# STV r4.1000, 104(1), <1> set_mark_4
+	STV r20, 108(1), <1>		# STV r20, 108(1), <1> set_mark_4
+	STV r16, 100(1), <1>		# STV r16, 100(1), <1> set_mark_4
+	gpu_beq 16, 20, 2, <1>
+	B .LBB1_2
+# BB#1:                                 # %L1.T
+	LDV R3.1000, 24(1) 		# LDV R3.1000, 24(1) set_mark_4
+	MVR R4.1000, R3.xyzw, <4>
+	LDV R3.1000, 25(1) 		# LDV R3.1000, 25(1) set_mark_4
+	MVR R5.1000, R3.xyzw, <4>
+	LDV R3.1000, 104(1) 		# LDV R3.1000, 104(1) set_mark_4
+	MVR R6.1000, R3.xyzw, <4>
+	MVR R15.1111, R4.xyzw, <4>
+	MVR R16.1111, R5.xyzw, <4>
+	MVR R17.1111, R6.xyzw, <4>
+	BL lerp
+	MVR R4.1111, R16.xyzw, <4>
+	STV r4.1000, 108(1), <1>		# STV r4.1000, 108(1), <1> set_mark_4
+	B .LBB1_34
+.LBB1_2:                                # %L1.F
+	LDV R4.1000, 100(1)
+	ADDI r5, r0, 1
+	gpu_beq 4, 5, 2, <1>
+	B .LBB1_4
+# BB#3:                                 # %L2.T
+	LDV R3.1000, 25(1) 		# LDV R3.1000, 25(1) set_mark_4
+	MVR R4.1000, R3.xyzw, <4>
+	LDV R3.1000, 26(1) 		# LDV R3.1000, 26(1) set_mark_4
+	MVR R5.1000, R3.xyzw, <4>
+	LDV R3.1000, 104(1) 		# LDV R3.1000, 104(1) set_mark_4
+	MVR R6.1000, R3.xyzw, <4>
+	MVR R15.1111, R4.xyzw, <4>
+	MVR R16.1111, R5.xyzw, <4>
+	MVR R17.1111, R6.xyzw, <4>
+	BL lerp
+	MVR R4.1111, R16.xyzw, <4>
+	STV r4.1000, 108(1), <1>		# STV r4.1000, 108(1), <1> set_mark_4
+	B .LBB1_34
+.LBB1_4:                                # %L2.F
+	LDV R4.1000, 100(1)
+	ADDI r5, r0, 2
+	gpu_beq 4, 5, 2, <1>
+	B .LBB1_6
+# BB#5:                                 # %L3.T
+	LDV R3.1000, 26(1) 		# LDV R3.1000, 26(1) set_mark_4
+	MVR R4.1000, R3.xyzw, <4>
+	LDV R3.1000, 27(1) 		# LDV R3.1000, 27(1) set_mark_4
+	MVR R5.1000, R3.xyzw, <4>
+	LDV R3.1000, 104(1) 		# LDV R3.1000, 104(1) set_mark_4
+	MVR R6.1000, R3.xyzw, <4>
+	MVR R15.1111, R4.xyzw, <4>
+	MVR R16.1111, R5.xyzw, <4>
+	MVR R17.1111, R6.xyzw, <4>
+	BL lerp
+	MVR R4.1111, R16.xyzw, <4>
+	STV r4.1000, 108(1), <1>		# STV r4.1000, 108(1), <1> set_mark_4
+	B .LBB1_34
+.LBB1_6:                                # %L3.F
+	LDV R4.1000, 100(1)
+	ADDI r5, r0, 3
+	gpu_beq 4, 5, 2, <1>
+	B .LBB1_8
+# BB#7:                                 # %L4.T
+	LDV R3.1000, 27(1) 		# LDV R3.1000, 27(1) set_mark_4
+	MVR R4.1000, R3.xyzw, <4>
+	LDV R3.1000, 28(1) 		# LDV R3.1000, 28(1) set_mark_4
+	MVR R5.1000, R3.xyzw, <4>
+	LDV R3.1000, 104(1) 		# LDV R3.1000, 104(1) set_mark_4
+	MVR R6.1000, R3.xyzw, <4>
+	MVR R15.1111, R4.xyzw, <4>
+	MVR R16.1111, R5.xyzw, <4>
+	MVR R17.1111, R6.xyzw, <4>
+	BL lerp
+	MVR R4.1111, R16.xyzw, <4>
+	STV r4.1000, 108(1), <1>		# STV r4.1000, 108(1), <1> set_mark_4
+	B .LBB1_34
+.LBB1_8:                                # %L4.F
+	LDV R4.1000, 100(1)
+	ADDI r5, r0, 4
+	gpu_beq 4, 5, 2, <1>
+	B .LBB1_10
+# BB#9:                                 # %L5.T
+	LDV R3.1000, 28(1) 		# LDV R3.1000, 28(1) set_mark_4
+	MVR R4.1000, R3.xyzw, <4>
+	LDV R3.1000, 29(1) 		# LDV R3.1000, 29(1) set_mark_4
+	MVR R5.1000, R3.xyzw, <4>
+	LDV R3.1000, 104(1) 		# LDV R3.1000, 104(1) set_mark_4
+	MVR R6.1000, R3.xyzw, <4>
+	MVR R15.1111, R4.xyzw, <4>
+	MVR R16.1111, R5.xyzw, <4>
+	MVR R17.1111, R6.xyzw, <4>
+	BL lerp
+	MVR R4.1111, R16.xyzw, <4>
+	STV r4.1000, 108(1), <1>		# STV r4.1000, 108(1), <1> set_mark_4
+	B .LBB1_34
+.LBB1_10:                               # %L5.F
+	LDV R4.1000, 100(1)
+	ADDI r5, r0, 5
+	gpu_beq 4, 5, 2, <1>
+	B .LBB1_12
+# BB#11:                                # %L6.T
+	LDV R3.1000, 29(1) 		# LDV R3.1000, 29(1) set_mark_4
+	MVR R4.1000, R3.xyzw, <4>
+	LDV R3.1000, 30(1) 		# LDV R3.1000, 30(1) set_mark_4
+	MVR R5.1000, R3.xyzw, <4>
+	LDV R3.1000, 104(1) 		# LDV R3.1000, 104(1) set_mark_4
+	MVR R6.1000, R3.xyzw, <4>
+	MVR R15.1111, R4.xyzw, <4>
+	MVR R16.1111, R5.xyzw, <4>
+	MVR R17.1111, R6.xyzw, <4>
+	BL lerp
+	MVR R4.1111, R16.xyzw, <4>
+	STV r4.1000, 108(1), <1>		# STV r4.1000, 108(1), <1> set_mark_4
+	B .LBB1_34
+.LBB1_12:                               # %L6.F
+	LDV R4.1000, 100(1)
+	ADDI r5, r0, 6
+	gpu_beq 4, 5, 2, <1>
+	B .LBB1_14
+# BB#13:                                # %L7.T
+	LDV R3.1000, 30(1) 		# LDV R3.1000, 30(1) set_mark_4
+	MVR R4.1000, R3.xyzw, <4>
+	LDV R3.1000, 31(1) 		# LDV R3.1000, 31(1) set_mark_4
+	MVR R5.1000, R3.xyzw, <4>
+	LDV R3.1000, 104(1) 		# LDV R3.1000, 104(1) set_mark_4
+	MVR R6.1000, R3.xyzw, <4>
+	MVR R15.1111, R4.xyzw, <4>
+	MVR R16.1111, R5.xyzw, <4>
+	MVR R17.1111, R6.xyzw, <4>
+	BL lerp
+	MVR R4.1111, R16.xyzw, <4>
+	STV r4.1000, 108(1), <1>		# STV r4.1000, 108(1), <1> set_mark_4
+	B .LBB1_34
+.LBB1_14:                               # %L7.F
+	LDV R4.1000, 100(1)
+	ADDI r5, r0, 7
+	gpu_beq 4, 5, 2, <1>
+	B .LBB1_16
+# BB#15:                                # %L8.T
+	LDV R3.1000, 31(1) 		# LDV R3.1000, 31(1) set_mark_4
+	MVR R4.1000, R3.xyzw, <4>
+	LDV R3.1000, 32(1) 		# LDV R3.1000, 32(1) set_mark_4
+	MVR R5.1000, R3.xyzw, <4>
+	LDV R3.1000, 104(1) 		# LDV R3.1000, 104(1) set_mark_4
+	MVR R6.1000, R3.xyzw, <4>
+	MVR R15.1111, R4.xyzw, <4>
+	MVR R16.1111, R5.xyzw, <4>
+	MVR R17.1111, R6.xyzw, <4>
+	BL lerp
+	MVR R4.1111, R16.xyzw, <4>
+	STV r4.1000, 108(1), <1>		# STV r4.1000, 108(1), <1> set_mark_4
+	B .LBB1_34
+.LBB1_16:                               # %L8.F
+	LDV R4.1000, 100(1)
+	ADDI r5, r0, 8
+	gpu_beq 4, 5, 2, <1>
+	B .LBB1_18
+# BB#17:                                # %L9.T
+	LDV R3.1000, 32(1) 		# LDV R3.1000, 32(1) set_mark_4
+	MVR R4.1000, R3.xyzw, <4>
+	LDV R3.1000, 33(1) 		# LDV R3.1000, 33(1) set_mark_4
+	MVR R5.1000, R3.xyzw, <4>
+	LDV R3.1000, 104(1) 		# LDV R3.1000, 104(1) set_mark_4
+	MVR R6.1000, R3.xyzw, <4>
+	MVR R15.1111, R4.xyzw, <4>
+	MVR R16.1111, R5.xyzw, <4>
+	MVR R17.1111, R6.xyzw, <4>
+	BL lerp
+	MVR R4.1111, R16.xyzw, <4>
+	STV r4.1000, 108(1), <1>		# STV r4.1000, 108(1), <1> set_mark_4
+	B .LBB1_34
+.LBB1_18:                               # %L9.F
+	LDV R4.1000, 100(1)
+	ADDI r5, r0, 9
+	gpu_beq 4, 5, 2, <1>
+	B .LBB1_20
+# BB#19:                                # %L10.T
+	LDV R3.1000, 33(1) 		# LDV R3.1000, 33(1) set_mark_4
+	MVR R4.1000, R3.xyzw, <4>
+	LDV R3.1000, 34(1) 		# LDV R3.1000, 34(1) set_mark_4
+	MVR R5.1000, R3.xyzw, <4>
+	LDV R3.1000, 104(1) 		# LDV R3.1000, 104(1) set_mark_4
+	MVR R6.1000, R3.xyzw, <4>
+	MVR R15.1111, R4.xyzw, <4>
+	MVR R16.1111, R5.xyzw, <4>
+	MVR R17.1111, R6.xyzw, <4>
+	BL lerp
+	MVR R4.1111, R16.xyzw, <4>
+	STV r4.1000, 108(1), <1>		# STV r4.1000, 108(1), <1> set_mark_4
+	B .LBB1_34
+.LBB1_20:                               # %L10.F
+	LDV R4.1000, 100(1)
+	ADDI r5, r0, 10
+	gpu_beq 4, 5, 2, <1>
+	B .LBB1_22
+# BB#21:                                # %L11.T
+	LDV R3.1000, 34(1) 		# LDV R3.1000, 34(1) set_mark_4
+	MVR R4.1000, R3.xyzw, <4>
+	LDV R3.1000, 35(1) 		# LDV R3.1000, 35(1) set_mark_4
+	MVR R5.1000, R3.xyzw, <4>
+	LDV R3.1000, 104(1) 		# LDV R3.1000, 104(1) set_mark_4
+	MVR R6.1000, R3.xyzw, <4>
+	MVR R15.1111, R4.xyzw, <4>
+	MVR R16.1111, R5.xyzw, <4>
+	MVR R17.1111, R6.xyzw, <4>
+	BL lerp
+	MVR R4.1111, R16.xyzw, <4>
+	STV r4.1000, 108(1), <1>		# STV r4.1000, 108(1), <1> set_mark_4
+	B .LBB1_34
+.LBB1_22:                               # %L11.F
+	LDV R4.1000, 100(1)
+	ADDI r5, r0, 11
+	gpu_beq 4, 5, 2, <1>
+	B .LBB1_24
+# BB#23:                                # %L12.T
+	LDV R3.1000, 35(1) 		# LDV R3.1000, 35(1) set_mark_4
+	MVR R4.1000, R3.xyzw, <4>
+	LDV R3.1000, 36(1) 		# LDV R3.1000, 36(1) set_mark_4
+	MVR R5.1000, R3.xyzw, <4>
+	LDV R3.1000, 104(1) 		# LDV R3.1000, 104(1) set_mark_4
+	MVR R6.1000, R3.xyzw, <4>
+	MVR R15.1111, R4.xyzw, <4>
+	MVR R16.1111, R5.xyzw, <4>
+	MVR R17.1111, R6.xyzw, <4>
+	BL lerp
+	MVR R4.1111, R16.xyzw, <4>
+	STV r4.1000, 108(1), <1>		# STV r4.1000, 108(1), <1> set_mark_4
+	B .LBB1_34
+.LBB1_24:                               # %L12.F
+	LDV R4.1000, 100(1)
+	ADDI r5, r0, 12
+	gpu_beq 4, 5, 2, <1>
+	B .LBB1_26
+# BB#25:                                # %L13.T
+	LDV R3.1000, 36(1) 		# LDV R3.1000, 36(1) set_mark_4
+	MVR R4.1000, R3.xyzw, <4>
+	LDV R3.1000, 37(1) 		# LDV R3.1000, 37(1) set_mark_4
+	MVR R5.1000, R3.xyzw, <4>
+	LDV R3.1000, 104(1) 		# LDV R3.1000, 104(1) set_mark_4
+	MVR R6.1000, R3.xyzw, <4>
+	MVR R15.1111, R4.xyzw, <4>
+	MVR R16.1111, R5.xyzw, <4>
+	MVR R17.1111, R6.xyzw, <4>
+	BL lerp
+	MVR R4.1111, R16.xyzw, <4>
+	STV r4.1000, 108(1), <1>		# STV r4.1000, 108(1), <1> set_mark_4
+	B .LBB1_34
+.LBB1_26:                               # %L13.F
+	LDV R4.1000, 100(1)
+	ADDI r5, r0, 13
+	gpu_beq 4, 5, 2, <1>
+	B .LBB1_28
+# BB#27:                                # %L14.T
+	LDV R3.1000, 37(1) 		# LDV R3.1000, 37(1) set_mark_4
+	MVR R4.1000, R3.xyzw, <4>
+	LDV R3.1000, 38(1) 		# LDV R3.1000, 38(1) set_mark_4
+	MVR R5.1000, R3.xyzw, <4>
+	LDV R3.1000, 104(1) 		# LDV R3.1000, 104(1) set_mark_4
+	MVR R6.1000, R3.xyzw, <4>
+	MVR R15.1111, R4.xyzw, <4>
+	MVR R16.1111, R5.xyzw, <4>
+	MVR R17.1111, R6.xyzw, <4>
+	BL lerp
+	MVR R4.1111, R16.xyzw, <4>
+	STV r4.1000, 108(1), <1>		# STV r4.1000, 108(1), <1> set_mark_4
+	B .LBB1_34
+.LBB1_28:                               # %L14.F
+	LDV R4.1000, 100(1)
+	ADDI r5, r0, 14
+	gpu_beq 4, 5, 2, <1>
+	B .LBB1_30
+# BB#29:                                # %L15.T
+	LDV R3.1000, 38(1) 		# LDV R3.1000, 38(1) set_mark_4
+	MVR R4.1000, R3.xyzw, <4>
+	LDV R3.1000, 39(1) 		# LDV R3.1000, 39(1) set_mark_4
+	MVR R5.1000, R3.xyzw, <4>
+	LDV R3.1000, 104(1) 		# LDV R3.1000, 104(1) set_mark_4
+	MVR R6.1000, R3.xyzw, <4>
+	MVR R15.1111, R4.xyzw, <4>
+	MVR R16.1111, R5.xyzw, <4>
+	MVR R17.1111, R6.xyzw, <4>
+	BL lerp
+	MVR R4.1111, R16.xyzw, <4>
+	STV r4.1000, 108(1), <1>		# STV r4.1000, 108(1), <1> set_mark_4
+	B .LBB1_34
+.LBB1_30:                               # %L15.F
+	LDV R4.1000, 100(1)
+	ADDI r5, r0, 15
+	gpu_beq 4, 5, 2, <1>
+	B .LBB1_32
+# BB#31:                                # %L16.T
+	LDV R3.1000, 39(1) 		# LDV R3.1000, 39(1) set_mark_4
+	MVR R4.1000, R3.xyzw, <4>
+	LDV R3.1000, 40(1) 		# LDV R3.1000, 40(1) set_mark_4
+	MVR R5.1000, R3.xyzw, <4>
+	LDV R3.1000, 104(1) 		# LDV R3.1000, 104(1) set_mark_4
+	MVR R6.1000, R3.xyzw, <4>
+	MVR R15.1111, R4.xyzw, <4>
+	MVR R16.1111, R5.xyzw, <4>
+	MVR R17.1111, R6.xyzw, <4>
+	BL lerp
+	MVR R4.1111, R16.xyzw, <4>
+	STV r4.1000, 108(1), <1>		# STV r4.1000, 108(1), <1> set_mark_4
+	B .LBB1_34
+.LBB1_32:                               # %L16.F
+	LDV R4.1000, 100(1)
+	ADDI r5, r0, 16
+	gpu_beq 4, 5, 2, <1>
+	B .LBB1_34
+# BB#33:                                # %L17.T
+	LDV R3.1000, 40(1) 		# LDV R3.1000, 40(1) set_mark_4
+	MVR R4.1000, R3.xyzw, <4>
+	STV r4.1000, 108(1), <1>		# STV r4.1000, 108(1), <1> set_mark_4
+.LBB1_34:                               # %L1.E
+	ADDI r4, r0, .LCPI1_12@ha
+	LDV R3.1000, 108(1) 		# LDV R3.1000, 108(1) set_mark_4
+	MVR R5.1000, R3.xyzw, <4>
+	LDV R3.1000, .LCPI1_12@l(4) 		# LDV R3.1000, .LCPI1_12@l(4) set_mark_4
+	MVR R4.1000, R3.xyzw, <4>
+	MULF r5, r5, r4
+	ADDF r4, r5, r4
+	MVR R15.1111, R4.xyzw, <4>      # size:4
+	MVR R16.1111, R22.xyzw, <4>     # size:4
+	MVR R17.1111, R22.xyzw, <4>     # size:4
+	MVR R18.1111, R21.xyzw, <4>     # size:4
+	BL OpenGLES.ConstructVec4.f.f.f.f # size:4
+	MVR r15.1111, r16.xyzw, <4>     # size:4
+	BL OpenGLES.ENDFrag.1           # size:4
+.Ltmp2:
+	.size	main, .Ltmp2-main
+.Leh_func_end1:
+
+	.type	FragColor_temp,@object  # @FragColor_temp
+	.section	.bss,"aw",@nobits
+	.globl	FragColor_temp
+	.align	4
+FragColor_temp:
+	.space	16
+	.size	FragColor_temp, 16
+
+	.type	color,@object           # @color
+	.align	4
+color:
+	.space	16
+	.size	color, 16
+
+	.section	.eh_frame,"aw",@progbits
+.LEH_frame0:
+.Lsection_eh_frame0:
+.Leh_frame_common0:
+.Lset0 = .Leh_frame_common_end0-.Leh_frame_common_begin0 # Length of Common Information Entry
+	.long	.Lset0
+.Leh_frame_common_begin0:
+	.long	0                       # CIE Identifier Tag
+	.byte	1                       # DW_CIE_VERSION
+	.byte	0                       # CIE Augmentation
+	.uleb128	1               # CIE Code Alignment Factor
+	.sleb128	-4              # CIE Data Alignment Factor
+	.byte	65                      # CIE Return Address Column
+	.byte	12                      # DW_CFA_def_cfa
+	.uleb128	1               # Register
+	.uleb128	0               # Offset
+	.align	2
+.Leh_frame_common_end0:
+.Llerp.eh = 0
+
+.Lmain.eh:
+.Lset1 = .Leh_frame_end1-.Leh_frame_begin1 # Length of Frame Information Entry
+	.long	.Lset1
+.Leh_frame_begin1:
+.Lset2 = .Leh_frame_begin1-.Leh_frame_common0 # FDE CIE offset
+	.long	.Lset2
+	.long	.Leh_func_begin1        # FDE initial location
+.Lset3 = .Leh_func_end1-.Leh_func_begin1 # FDE address range
+	.long	.Lset3
+	.uleb128	0               # Augmentation size
+	.byte	4                       # DW_CFA_advance_loc4
+.Lset4 = .Ltmp1-.Leh_func_begin1
+	.long	.Lset4
+	.byte	14                      # DW_CFA_def_cfa_offset
+	.uleb128	240             # Offset
+	.byte	17                      # DW_CFA_offset_extended_sf
+	.uleb128	65              # Reg
+	.sleb128	-1              # Offset
+	.byte	176                     # DW_CFA_offset + Reg (48)
+	.uleb128	32              # Offset
+	.byte	177                     # DW_CFA_offset + Reg (49)
+	.uleb128	30              # Offset
+	.byte	178                     # DW_CFA_offset + Reg (50)
+	.uleb128	28              # Offset
+	.byte	179                     # DW_CFA_offset + Reg (51)
+	.uleb128	26              # Offset
+	.byte	180                     # DW_CFA_offset + Reg (52)
+	.uleb128	24              # Offset
+	.byte	181                     # DW_CFA_offset + Reg (53)
+	.uleb128	22              # Offset
+	.byte	182                     # DW_CFA_offset + Reg (54)
+	.uleb128	20              # Offset
+	.byte	183                     # DW_CFA_offset + Reg (55)
+	.uleb128	18              # Offset
+	.align	2
+.Leh_frame_end1:
+
+	.text
+.Ltext_end:
+	.data
+.Ldata_end:
+	.text
+.Lsection_end1:
+	.section	.debug_frame,"",@progbits
+.Ldebug_frame_common:
+.Lset5 = .Ldebug_frame_common_end-.Ldebug_frame_common_begin # Length of Common Information Entry
+	.long	.Lset5
+.Ldebug_frame_common_begin:
+	.long	4294967295              # CIE Identifier Tag
+	.byte	1                       # CIE Version
+	.byte	0                       # CIE Augmentation
+	.uleb128	1               # CIE Code Alignment Factor
+	.sleb128	-4              # CIE Data Alignment Factor
+	.byte	65                      # CIE RA Column
+	.byte	12                      # DW_CFA_def_cfa
+	.uleb128	1               # Register
+	.uleb128	0               # Offset
+	.align	2
+.Ldebug_frame_common_end:
+	.section	.debug_info,"",@progbits
+.Linfo_begin1:
+	.long	45                      # Length of Compilation Unit Info
+	.short	2                       # DWARF version number
+	.long	.Labbrev_begin          # Offset Into Abbrev. Section
+	.byte	4                       # Address Size (in bytes)
+	.uleb128	1               # Abbrev [1] 0xb:0x22 DW_TAG_compile_unit
+	.byte	0                       # DW_AT_producer
+	.byte	12                      # DW_AT_language
+	.ascii	 "size"                 # DW_AT_name
+	.byte	0
+	.long	0                       # DW_AT_entry_pc
+	.long	.Lsection_line          # DW_AT_stmt_list
+	.uleb128	2               # Abbrev [2] 0x1b:0x11 DW_TAG_subprogram
+	.ascii	 "vector"               # DW_AT_name
+	.byte	0
+	.ascii	 "vector"               # DW_AT_MIPS_linkage_name
+	.byte	0
+	.byte	1                       # DW_AT_prototyped
+	.byte	1                       # DW_AT_external
+	.byte	0                       # End Of Children Mark
+	.byte	0                       # 4 extra padding bytes for GDB
+	.byte	0
+	.byte	0
+	.byte	0
+.Linfo_end1:
+	.section	.debug_abbrev,"",@progbits
+.Labbrev_begin:
+	.uleb128	1               # Abbreviation Code
+	.uleb128	17              # DW_TAG_compile_unit
+	.uleb128	1               # DW_CHILDREN_yes
+	.uleb128	37              # DW_AT_producer
+	.uleb128	8               # DW_FORM_string
+	.uleb128	19              # DW_AT_language
+	.uleb128	11              # DW_FORM_data1
+	.uleb128	3               # DW_AT_name
+	.uleb128	8               # DW_FORM_string
+	.uleb128	82              # DW_AT_entry_pc
+	.uleb128	1               # DW_FORM_addr
+	.uleb128	16              # DW_AT_stmt_list
+	.uleb128	1               # DW_FORM_addr
+	.uleb128	0               # EOM(1)
+	.uleb128	0               # EOM(2)
+	.uleb128	2               # Abbreviation Code
+	.uleb128	46              # DW_TAG_subprogram
+	.uleb128	0               # DW_CHILDREN_no
+	.uleb128	3               # DW_AT_name
+	.uleb128	8               # DW_FORM_string
+	.uleb128	8199            # DW_AT_MIPS_linkage_name
+	.uleb128	8               # DW_FORM_string
+	.uleb128	39              # DW_AT_prototyped
+	.uleb128	12              # DW_FORM_flag
+	.uleb128	63              # DW_AT_external
+	.uleb128	12              # DW_FORM_flag
+	.uleb128	0               # EOM(1)
+	.uleb128	0               # EOM(2)
+	.uleb128	0               # EOM(3)
+.Labbrev_end:
+	.section	.debug_line,"",@progbits
+.Lset6 = .Lline_end-.Lline_begin        # Length of Source Line Info
+	.long	.Lset6
+.Lline_begin:
+	.short	2                       # DWARF version number
+.Lset7 = .Lline_prolog_end-.Lline_prolog_begin # Prolog Length
+	.long	.Lset7
+.Lline_prolog_begin:
+	.byte	1                       # Minimum Instruction Length
+	.byte	1                       # Default is_stmt_start flag
+	.byte	246                     # Line Base Value (Special Opcodes)
+	.byte	245                     # Line Range Value (Special Opcodes)
+	.byte	10                      # Special Opcode Base
+	.byte	0                       # DW_LNS_copy arg count
+	.byte	1                       # DW_LNS_advance_pc arg count
+	.byte	1                       # DW_LNS_advance_line arg count
+	.byte	1                       # DW_LNS_set_file arg count
+	.byte	1                       # DW_LNS_set_column arg count
+	.byte	0                       # DW_LNS_negate_stmt arg count
+	.byte	0                       # DW_LNS_set_basic_block arg count
+	.byte	0                       # DW_LNS_const_add_pc arg count
+	.byte	1                       # DW_LNS_fixed_advance_pc arg count
+	.byte	0                       # Directory
+	.byte	0                       # End of directories
+	.asciz	 "size"                 # Source
+	.uleb128	1               # Directory #
+	.uleb128	0               # Mod date
+	.uleb128	0               # File size
+	.byte	0                       # End of files
+.Lline_prolog_end:
+	.byte	0                       # Extended Op
+	.byte	5                       # Op size
+	.byte	2                       # DW_LNE_set_address
+	.long	.Lsection_end1          # Section end label
+	.byte	0                       # DW_LNE_end_sequence
+	.byte	1
+	.byte	1
+.Lline_end:
+	.section	.debug_pubnames,"",@progbits
+.Lset8 = .Lpubnames_end1-.Lpubnames_begin1 # Length of Public Names Info
+	.long	.Lset8
+.Lpubnames_begin1:
+	.short	2                       # DWARF Version
+	.long	.Linfo_begin1           # Offset of Compilation Unit Info
+.Lset9 = .Linfo_end1-.Linfo_begin1      # Compilation Unit Length
+	.long	.Lset9
+	.long	27                      # DIE offset
+	.asciz	 "vector"               # External Name
+	.long	0                       # End Mark
+.Lpubnames_end1:
+	.section	.debug_pubtypes,"",@progbits
+.Lset10 = .Lpubtypes_end1-.Lpubtypes_begin1 # Length of Public Types Info
+	.long	.Lset10
+.Lpubtypes_begin1:
+	.short	2                       # DWARF Version
+	.long	.Linfo_begin1           # Offset of Compilation Unit Info
+.Lset11 = .Linfo_end1-.Linfo_begin1     # Compilation Unit Length
+	.long	.Lset11
+	.long	0                       # End Mark
+.Lpubtypes_end1:
+	.section	.debug_aranges,"",@progbits
+	.section	.debug_ranges,"",@progbits
+	.section	.debug_macinfo,"",@progbits
+	.weak	OpenGLES.Start
+	.weak	OpenGLES.LoadVarying4.color.0
+	.weak	OpenGLES.Floor.f
+	.weak	OpenGLES.Convert.fptosi
+	.weak	OpenGLES.ConstructVec4.f.f.f.f
+	.weak	OpenGLES.ENDFrag.1
+
+
+lerp:                                   # @lerp
+.Leh_func_begin0:
+# BB#0:                                 # %entry
+	MVR R4.1111, R17.xyzw, <4>
+	MVR R5.1111, R16.xyzw, <4>
+	MVR R6.1111, R15.xyzw, <4>
+	STV r6.1000, -12(1), <1>		# STV r6.1000, -12(1), <1> set_mark_4
+	STV r5.1000, -8(1), <1>		# STV r5.1000, -8(1), <1> set_mark_4
+	STV r4.1000, -4(1), <1>		# STV r4.1000, -4(1), <1> set_mark_4
+	LDV R3.1000, -12(1) 		# LDV R3.1000, -12(1) set_mark_4
+	MVR R5.1000, R3.xyzw, <4>
+	LDV R3.1000, -8(1) 		# LDV R3.1000, -8(1) set_mark_4
+	MVR R6.1000, R3.xyzw, <4>
+	SUBF r6, r6, r5
+	MULF r4, r4, r6
+	ADDF r4, r5, r4
+	MVR R16.1111, R4.xyzw, <4>
+	BL OpenGLES.BackToMainFunction
+.Ltmp0:
+	.size	lerp, .Ltmp0-lerp
+.Leh_func_end0:

@@ -1,0 +1,12 @@
+log_float_frag_xvary.test
+log_float_frag_xvary01.test
+log_vec2_frag_xvary.test
+log_vec2_frag_xvary01.test
+log_vec3_frag_xvary.test
+log_vec3_frag_xvary01.test
+log_float_vert_xvary.test
+log_float_vert_xvary01.test
+log_vec2_vert_xvary.test
+log_vec2_vert_xvary01.test
+log_vec3_vert_xvary.test
+log_vec3_vert_xvary01.test

@@ -1,0 +1,20 @@
+if [ "$1" == "1" ] 
+then
+cd ../../3D_src/Compiler_Linker/Compiler_and_Linker-patch/llvm-source/lib/Target/New/
+cp NewCallingConv_unified.td NewCallingConv.td
+cp NewFrameInfo_unified.h NewFrameInfo.h
+cp NewISelLowering_unified.cpp NewISelLowering.cpp
+cp NewRegisterInfo_unified.td NewRegisterInfo.td
+cp NewRegisterInfo_unified.cpp NewRegisterInfo.cpp
+cd -
+make remake-llvm
+else
+cd ../../3D_src/Compiler_Linker/Compiler_and_Linker-patch/llvm-source/lib/Target/New/
+cp test_backup/NewCallingConv_old_version.td NewCallingConv.td
+cp test_backup/NewFrameInfo_old_version.h NewFrameInfo.h
+cp test_backup/NewISelLowering_old_version.cpp NewISelLowering.cpp
+cp test_backup/NewRegisterInfo_old_version.td NewRegisterInfo.td
+cp test_backup/NewRegisterInfo_old_version.cpp NewRegisterInfo.cpp
+cd -
+make remake-llvm
+fi

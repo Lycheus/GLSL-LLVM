@@ -1,0 +1,6 @@
+fract_float_frag_xvary.test
+fract_vec2_frag_xvary.test
+fract_vec3_frag_xvary.test
+fract_float_vert_xvary.test
+fract_vec2_vert_xvary.test
+fract_vec3_vert_xvary.test

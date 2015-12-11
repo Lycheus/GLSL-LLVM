@@ -1,0 +1,6 @@
+sin_float_frag_xvary.test
+sin_vec2_frag_xvary.test
+sin_vec3_frag_xvary.test
+sin_float_vert_xvary.test
+sin_vec2_vert_xvary.test
+sin_vec3_vert_xvary.test

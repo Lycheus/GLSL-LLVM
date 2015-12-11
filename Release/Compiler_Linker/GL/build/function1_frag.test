@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!-- This tests if void functions are allowed to return a value.             -->
+<!-- The fragment shader should fail to compile.                             -->
+<test mode="gl" pattern="build">
+	<compstat>false</compstat>
+	<linkstat>false</linkstat>
+	<shader>
+		<vertshader>../default/default.vert</vertshader>
+		<fragshader>function1_frag.frag</fragshader>
+	</shader>
+</test>

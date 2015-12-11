@@ -1,0 +1,6 @@
+min_float_frag_xvary_yconsthalf.test
+min_vec2_frag_xvary_yconsthalf.test
+min_vec3_frag_xvary_yconsthalf.test
+min_float_vert_xvary_yconsthalf.test
+min_vec2_vert_xvary_yconsthalf.test
+min_vec3_vert_xvary_yconsthalf.test

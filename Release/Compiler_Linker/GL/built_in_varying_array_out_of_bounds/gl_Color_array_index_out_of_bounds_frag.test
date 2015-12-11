@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!-- This test verifies that the glsl compiler does not allow built-in     -->
+<!-- varying gl_Color to be accessed with indices that are out of          -->
+<!-- bounds. The shader should issue a compile error                       -->
+<test mode="gl" pattern="build">
+	<compstat>false</compstat>
+	<linkstat>false</linkstat>
+	<shader>
+		<vertshader>../default/default.vert</vertshader>
+		<fragshader>gl_Color_array_index_out_of_bounds_frag.frag</fragshader>
+	</shader>
+</test>

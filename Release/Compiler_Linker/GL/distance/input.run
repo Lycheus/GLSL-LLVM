@@ -1,0 +1,6 @@
+distance_float_frag_xvaryyhalf.test
+distance_vec2_frag_xvaryyhalf.test
+distance_vec3_frag_xvaryyhalf.test
+distance_float_vert_xvaryyhalf.test
+distance_vec2_vert_xvaryyhalf.test
+distance_vec3_vert_xvaryyhalf.test

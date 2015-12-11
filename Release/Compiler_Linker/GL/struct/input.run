@@ -1,0 +1,70 @@
+struct_float_frag.test
+struct_float_vert.test
+structcopy_float_frag.test
+structcopy_float_vert.test
+structnest_float_frag.test
+structnest_float_vert.test
+struct_bool_frag.test
+struct_bool_vert.test
+structcopy_bool_frag.test
+structcopy_bool_vert.test
+structnest_bool_frag.test
+structnest_bool_vert.test
+struct_vec2_frag.test
+struct_vec2_vert.test
+structcopy_vec2_frag.test
+structcopy_vec2_vert.test
+structnest_vec2_frag.test
+structnest_vec2_vert.test
+struct_vec3_frag.test
+struct_vec3_vert.test
+structcopy_vec3_frag.test
+structcopy_vec3_vert.test
+structnest_vec3_frag.test
+structnest_vec3_vert.test
+struct_vec4_frag.test
+struct_vec4_vert.test
+structcopy_vec4_frag.test
+structcopy_vec4_vert.test
+structnest_vec4_frag.test
+structnest_vec4_vert.test
+struct_bvec2bvec3bvec4_frag.test
+struct_bvec2bvec3bvec4_vert.test
+structcopy_bvec2bvec3bvec4_frag.test
+structcopy_bvec2bvec3bvec4_vert.test
+structnest_bvec2bvec3bvec4_frag.test
+structnest_bvec2bvec3bvec4_vert.test
+struct_mat2_frag.test
+struct_mat2_vert.test
+structcopy_mat2_frag.test
+structcopy_mat2_vert.test
+structnest_mat2_frag.test
+structnest_mat2_vert.test
+struct_mat3_frag.test
+struct_mat3_vert.test
+structcopy_mat3_frag.test
+structcopy_mat3_vert.test
+structnest_mat3_frag.test
+structnest_mat3_vert.test
+struct_mat4_frag.test
+struct_mat4_vert.test
+structcopy_mat4_frag.test
+structcopy_mat4_vert.test
+structnest_mat4_frag.test
+structnest_mat4_vert.test
+nestedstructcomb_various_frag.test
+nestedstructcomb_various_vert.test
+
+# These tests need to be fixed for integer divide issues - see bugzilla 2993
+# struct_int_frag.test
+# struct_int_vert.test
+# structcopy_int_frag.test
+# structcopy_int_vert.test
+# structnest_int_frag.test
+# structnest_int_vert.test
+# struct_ivec2ivec3ivec4_frag.test
+# struct_ivec2ivec3ivec4_vert.test
+# structcopy_ivec2ivec3ivec4_frag.test
+# structcopy_ivec2ivec3ivec4_vert.test
+# structnest_ivec2ivec3ivec4_frag.test
+# structnest_ivec2ivec3ivec4_vert.test

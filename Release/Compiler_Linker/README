@@ -1,0 +1,31 @@
+**********************test_Compiler**********************
+
+This is the program that includes compiler and linker.
+
+********************END test_Compiler********************
+
+
+
+********************** disassembler**********************
+
+This program helps you to know the binary code.
+The input file should be the binary code that supports 
+our 3D hardware.
+command:
+disassembler <input file>
+
+******************** END disassembler********************
+
+
+
+*********************** bin_to_txt***********************
+
+This program can change the binary code to the text file
+that means the readable file. It show the readable 0-1
+binary to the file, c_model_output.
+The input file should be the binary code that supports 
+our 3D hardware.
+command:
+bin_to_txt <input file> 
+
+********************* END bin_to_txt*********************

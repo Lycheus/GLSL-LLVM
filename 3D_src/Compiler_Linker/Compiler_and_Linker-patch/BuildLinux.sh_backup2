@@ -1,0 +1,21 @@
+#dondum 2010-07-26
+
+#! /bin/bash
+
+# build the StandAlone app and all it's dependencies
+make -C StandAlone
+
+# so we can find the shared library
+#LD_LIBRARY_PATH=`pwd`/glslang/MachineIndependent/lib:${LD_LIBRARY_PATH}
+export LD_LIBRARY_PATH=`pwd`/glslang/MachineIndependent/lib
+#export LD_LIBRARY_PATH
+echo $LD_LIBRARY_PATH
+# run using test data
+cd ./StandAlone
+./StandAlone -a minimal.frag > ../fragment
+./StandAlone -a minimal.vert > ../vertex
+cd ..
+./format.sh fragment > ./fragment.ll
+./format.sh vertex > ./vertex.ll
+#gcc myfloat.c -o fto754
+# ./StandAlone -a brick.vert brick.frag

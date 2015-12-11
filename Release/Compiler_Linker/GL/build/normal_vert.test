@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!-- This tests that an attribute can not be modified.                       -->
+<!-- The fragment shader should fail to compile.                             -->
+<test mode="gl" pattern="build">
+	<compstat>false</compstat>
+	<linkstat>false</linkstat>
+	<shader>
+		<vertshader>normal_vert.vert</vertshader>
+		<fragshader>default.frag</fragshader>
+	</shader>
+</test>

@@ -1,0 +1,2 @@
+#!/usr/bin/tcsh
+cat arm-2008q3.tar.bz2.a[a-z] | tar -xzv

@@ -1,0 +1,6 @@
+reflect_float_frag_ivarynconst.test
+reflect_float_vert_ivarynconst.test
+reflect_vec2_frag_ivarynconst.test
+reflect_vec2_vert_ivarynconst.test
+reflect_vec3_frag_ivarynconst.test
+reflect_vec3_vert_ivarynconst.test

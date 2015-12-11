@@ -1,0 +1,3 @@
+./output_bincode $1 >> test_OP_lllllkkkkkaaaaaa
+./output_txt test_OP_lllllkkkkkaaaaaa
+rm test_OP_lllllkkkkkaaaaaa

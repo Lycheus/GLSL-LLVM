@@ -1,0 +1,6 @@
+normalize_float_frag_xvary.test
+normalize_vec2_frag_xvary.test
+normalize_vec3_frag_xvary.test
+normalize_float_vert_xvary.test
+normalize_vec2_vert_xvary.test
+normalize_vec3_vert_xvary.test

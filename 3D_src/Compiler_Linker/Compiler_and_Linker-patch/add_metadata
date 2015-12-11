@@ -1,0 +1,7 @@
+#Sheng-Chang 2011-1-3	#Add metadata about vector size of instructions
+#vector size 4 | vector size 3 | metadat declatration
+
+#sed -e '/%.*<4 x/s/$/, !dbg !4/g' -e '/%.*<3 x/s/$/, !dbg !5/g' -e 's/}/}\n!1 = metadata !{i32 458763, metadata !2}; [DW_TAG_lexical_block ]\n!2 = metadata !{i32 458798, i32 0, metadata !3, metadata !"vector", metadata !"vector", metadata !"vector", metadata !3, i32 1, null, i1 false, i1 true}; [DW_TAG_subprogram ]\n!3 = metadata !{i32 458769, i32 0, i32 12, metadata !"size", metadata !"", metadata !"", i1 true, i1 false, metadata !"", i32 0}; [DW_TAG_compile_unit ]\n!4 = metadata !{i32 4, null, metadata !2, null}\n!5 = metadata !{i32 3, null, metadata !2, null}\n/g' $1 > $2
+
+sed -e '/%.*<4 x/s/$/, !dbg !4/g' -e '/%.*<3 x/s/$/, !dbg !5/g' -e 's/add_metadata/!1 = metadata !{i32 458763, metadata !2}; [DW_TAG_lexical_block ]\n!2 = metadata !{i32 458798, i32 0, metadata !3, metadata !"vector", metadata !"vector", metadata !"vector", metadata !3, i32 1, null, i1 false, i1 true}; [DW_TAG_subprogram ]\n!3 = metadata !{i32 458769, i32 0, i32 12, metadata !"size", metadata !"", metadata !"", i1 true, i1 false, metadata !"", i32 0}; [DW_TAG_compile_unit ]\n!4 = metadata !{i32 4, null, metadata !2, null}\n!5 = metadata !{i32 3, null, metadata !2, null}\n/g' $1 | sed "s/define\(.*\), \!dbg \!4/define\1/g" > $2
+#sed XXX $2 > $2

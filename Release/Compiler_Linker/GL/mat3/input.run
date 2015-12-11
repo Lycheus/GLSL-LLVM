@@ -1,0 +1,6 @@
+mat3arraysimple_vert.test
+mat3arrayindirect0_vert.test
+mat3arrayindirect1_vert.test
+mat3arraysimple_frag.test
+mat3arrayindirect0_frag.test
+mat3arrayindirect1_frag.test

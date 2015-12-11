@@ -1,0 +1,41 @@
+#!/bin/tcsh
+
+if ( $1 == "plane" ) then
+    cp "$1"/plane_Uniform.txt Uniform2.txt
+    cp "$1"/plane_Vertex_data.txt Vertex_Data2.txt
+endif
+
+if ( $1 == "glow1" ) then
+    cp "$1"/glow_Uniform.txt Uniform2.txt
+    #cp "$1"/glow_Uniform_without_ocean.txt Uniform2.txt
+    cp "$1"/glow_1_Vertex_data.txt Vertex_Data2.txt
+endif
+
+if ( $1 == "glow2" ) then
+    cp "$1"/glow_Uniform.txt Uniform2.txt
+    #cp "$1"/glow_Uniform_without_ocean.txt Uniform2.txt
+    cp "$1"/glow_2_Vertex_data.txt Vertex_Data2.txt
+endif
+
+
+if ( $1 == "sky" ) then
+    cp "$1"/sky_Uniform.txt Uniform2.txt
+    cp "$1"/sky_Vertex_data.txt Vertex_Data2.txt
+endif
+
+if ( $1 == "jet" ) then
+    cp "$1"/jet_Uniform.txt Uniform2.txt
+    cp "$1"/jet_Vertex_data.txt Vertex_Data2.txt
+endif
+
+if ( $1 == "sun" ) then
+    cp "$1"/sun_Uniform.txt Uniform2.txt
+    cp "$1"/sun_Vertex_data.txt Vertex_Data2.txt
+endif
+
+if ( $1 == "ocean" ) then
+    cp "$1"/ocean_Uniform.txt Uniform2.txt
+    #cp "$1"/ocean_Vertex_Data2.txt Vertex_Data2.txt
+    cp "$1"/ocean_Vertex_Data2_$2\.txt Vertex_Data2.txt
+endif
+
